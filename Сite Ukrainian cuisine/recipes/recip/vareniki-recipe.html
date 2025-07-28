@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varenyky</title>
+    <link rel="stylesheet" href="/main.css">
+    <!-- Link to Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Keyframes animation for menu and header */
+        @keyframes slideInFromTop {
+            0% {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Header Styles */
+        header {
+            position: relative;
+            text-align: center;
+            padding: 20px 0;
+            color: white;
+            font-size: 36px;
+            overflow: hidden;
+            animation: slideInFromTop 1s ease-out; /* Animation for header */
+            background-image: url('image/varenyky1.jpg'); /* Correct path for the background image */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        /* Navigation Menu */
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 10px;
+            position: relative;
+            z-index: 1;
+            animation: slideInFromTop 1s ease-out 0.5s forwards; /* Animation for navigation */
+        }
+
+        nav a {
+            color: white;
+            font-size: 18px;
+            opacity: 0;
+            animation: fadeIn 1s ease-out 1s forwards; /* Fade in effect for links */
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Banoch Section */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            color: white;
+            padding: 50px;
+            text-align: center;
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+        }
+
+        .about-info {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            max-width: 800px;
+            margin: 20px;
+        }
+
+        .about-info h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .about-info p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        .about-info img {
+            width: 100%;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        /* Ingredients Section */
+        .ingredients-section {
+            padding: 50px;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+
+        .ingredients-section h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .ingredients-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .ingredients-list li {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        /* Preparation Section */
+        .preparation-section {
+            padding: 50px;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .preparation-section h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .preparation-section p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        /* YouTube video container */
+        .youtube-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .youtube-container iframe {
+            max-width: 100%;
+            height: 450px;
+            border: none;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- New Header with Navigation -->
+    <div class="content">
+        <header>
+            <h1>Varenyky</h1>
+            <!-- Navigation menu -->
+            <nav>
+                <a href="/">Home</a>
+                <a href="/recipes">Recipes</a>
+                <a href="/contact">Contact</a>
+                <a href="/about me">About Me</a>
+            </nav>
+        </header>
+    </div>
+
+    <!-- First Image -->
+    <div class="container">
+        <picture>
+            <source srcset="image/varenyky2.jpg" media="(max-width: 768px)">
+            <img src="image/varenyky2.jpg" alt="Image before text" style="max-width: 800px; width: 100%; height: auto;">
+        </picture>
+    </div>
+
+    <!-- Banoch Story Section -->
+    <div class="container">
+        <div class="about-info">
+            <h2>The History of Varenyky</h2>
+            <p>Varenyky, the beloved dumplings of Ukrainian cuisine, have been a part of Ukrainian culinary tradition for centuries. Filled with a variety of ingredients ranging from potatoes and cheese to fruits and berries, these dough parcels have come to symbolize comfort, tradition, and Ukrainian hospitality. They are often served at family gatherings, festive meals, and important holidays, connecting generations with their rich history and flavor.</p>
+
+            <h2>The Origins of Varenyky</h2>
+            <p>The origins of varenyky are believed to be ancient, with some historians tracing their roots back to the early Slavic peoples. Dumplings, or stuffed pastries, have been a part of European cuisine for centuries, and it is likely that varenyky evolved from similar dishes across Eastern Europe. The word "varenyky" comes from the Ukrainian verb "varyty", meaning "to boil," which describes the most common cooking method for these dumplings.
+            While the exact origins of varenyky are not fully documented, the concept of stuffing dough with various fillings likely emerged in agricultural societies where people used readily available ingredients to create hearty and filling meals. As grains like wheat, rye, and buckwheat were staples in Ukraine, dumplings made from these ingredients became a widespread and practical food choice. Over time, varenyky evolved to reflect the agricultural richness of the region, with various fillings depending on what was available locally.</p>
+
+            <h2>Varenyky as a Folk Dish</h2>
+            <p>Varenyky have long been a central part of Ukrainian folk cuisine. The dish’s simplicity, versatility, and ability to be made with both savory and sweet fillings made it a staple for everyday meals, as well as special occasions. Traditionally, the dough is made from flour, water, and salt, while the fillings range from mashed potatoes, cheese, and mushrooms to cherries, berries, or poppy seeds for sweet varieties.
+            In rural Ukrainian households, varenyky were often prepared in large quantities and served at significant family gatherings, like weddings, birthdays, and religious holidays. The process of making varenyky was often a communal activity, with family members gathering together to prepare the dough, stuff the dumplings, and cook them. This tradition of making varenyky as a family activity is still alive in many Ukrainian homes today, especially during the winter holiday season.
+            The fillings for savory varenyky typically included mashed potatoes, onions, cabbage, meat, and cottage cheese. Sweet varenyky, on the other hand, might be filled with fruit like cherries, apples, or plums, and dusted with sugar or drizzled with honey. Sometimes, the dough itself was enriched with eggs, making the dumplings even more tender and flavorful.</p>
+            
+            <h2>Varenyky in Ukrainian Celebrations</h2>
+            <p>Varenyky are deeply woven into the fabric of Ukrainian celebrations and religious traditions. One of the most significant occasions for making varenyky is Christmas, where they are often served as part of a twelve-dish meal that celebrates the Nativity. During Easter, varenyky are also commonly prepared, though the fillings and the overall meal may vary depending on regional customs.
+            At weddings, it is traditional for the bride and groom to eat varenyky together, symbolizing their unity and the beginning of their shared life. In some regions, guests at weddings will also receive varenyky as part of a festive meal, often alongside other Ukrainian dishes like borscht, holubtsi (stuffed cabbage rolls), and pampushki (garlic buns). The variety of fillings and the shared nature of the meal make varenyky a dish that brings people together, celebrating both individual families and the larger Ukrainian community.</p>
+
+            <h2>Varenyky as a Symbol of Ukrainian Hospitality</h2>
+            <p>In Ukraine, offering varenyky to guests is a symbol of hospitality and respect. Whether served at a family dinner or as part of a larger celebration, varenyky are seen as a welcoming food. They represent the warmth of Ukrainian culture, where food is often the centerpiece of gatherings and an expression of generosity.
+            The preparation and serving of varenyky are often done with great care, and it is customary to offer guests a variety of fillings to suit different tastes. The diversity of varenyky—savory, sweet, or with meat—demonstrates the versatility of Ukrainian cooking and its deep ties to the land and local ingredients. The act of sharing a plate of freshly made varenyky with others embodies the sense of community and familial love that is central to Ukrainian culture.</p>
+                            
+            <h2>Regional Variations</h2>
+            <p>While varenyky are universally beloved across Ukraine, there are notable regional variations in how they are made and served. In western Ukraine, especially in the Carpathian region, varenyky often feature fillings like potatoes with mushrooms or cottage cheese. In the central and eastern parts of the country, mashed potatoes with onions, or even meat fillings, are more common. Some regions, particularly in the south, may also include fruit-filled varenyky, made with cherries, strawberries, or blueberries.
+            In Ukraine’s larger cities, like Kyiv or Lviv, you may also find varenyky filled with less traditional ingredients, such as caramelized onions, spinach, or even modern takes like smoked salmon. Despite these regional twists, the essence of varenyky—simple, hearty dumplings that bring comfort and joy—remains the same across the country.</p>
+
+            <h2>Varenyky in Modern Times</h2>
+            <p>In recent years, varenyky have enjoyed a resurgence not only in Ukraine but also among the Ukrainian diaspora around the world. Many people have rediscovered the joy of making these dumplings by hand, either sticking to traditional fillings or experimenting with new, contemporary ones. Varenyky have also appeared on the menus of trendy restaurants in cities like Kyiv, where chefs reinterpret classic fillings or create fusion versions of the dish.
+            Varenyky are also a popular street food, often served at festivals and markets, where they are fried or boiled and offered with various toppings or sauces. Their popularity abroad has grown, especially among those seeking to connect with their Ukrainian roots, making varenyky a dish that transcends borders and continues to unite people across the globe.</p>
+
+            <h2>Conclusion</h2>
+            <p>Ukrainian varenyky are more than just dumplings; they are a reflection of the country’s rich agricultural history, cultural traditions, and deep sense of hospitality. These simple yet versatile dumplings, whether filled with savory potatoes or sweet berries, have been a beloved part of Ukrainian life for centuries. Today, varenyky continue to bring families together and celebrate the warmth and resilience of Ukrainian culture, both at home and abroad. Whether prepared for a holiday meal, a wedding celebration, or simply as an everyday dish, varenyky remain a timeless symbol of Ukrainian culinary heritage.</p>
+        </div>
+    </div>
+
+    <!-- Second Image -->
+    <div class="container">
+        <picture>
+            <source srcset="image/varenyky3.jpg" media="(max-width: 768px)">
+            <img src="image/varenyky3.jpg" alt="Image in the middle of text" style="max-width: 800px; width: 100%; height: auto;">
+        </picture>
+    </div>
+
+    <!-- Ingredients Section -->
+    <div class="ingredients-section">
+        <h2>Ingredients for Varenyky</h2>
+        <ul class="ingredients-list">
+            <li>1 cup warm water</li>
+            <li>2 cups all-purpose flour, additional flour for dusting/li>
+            <li>1/2 teaspoon salt, for the dough</li>
+            <li>5 large potatoes, peeled</li>
+            <li>2 tablespoons butter</li>
+            <li>1 yellow onion</li>
+            <li>1/3 teaspoon salt, for the filling</li>
+            <li>1/2 teaspoon black pepper</li>
+
+        </ul>
+    </div>
+
+    <!-- Preparation Section -->
+    <div class="preparation-section">
+        <h2>Preparation</h2>
+        <p>Pour warm water (not boiling water, it should be about 100 degrees Fahrenheit) into a deep mixing bowl. Add flour and salt.
+            2 cups all-purpose flour, 1 cup warm water, 1/2 teaspoon salt
+            Knead the dough first with a spoon and then with your hands until you get a soft elastic dough that is a little sticky when touching it. Alternatively, you can also use a stand mixer. Cover the ball of dough with cling film and let it rest for 30 minutes.
+            While the dough is resting, cut the peeled potatoes into small cubes and put them in a saucepan. Add water and a pinch of salt and boil the potatoes until soft. Then drain all the water.
+            5 large potatoes
+            In a frying pan, fry the chopped onion in butter until golden brown, stirring occasionally. This should take around 5-6 minutes. If you don't like onions, feel free to omit them.
+            1 yellow onion, 2 tablespoons butter
+            Mash the boiled potatoes with a potato masher or a fork. Then add the fried onions, salt and pepper. If you see that the potatoes are too dry, add a little bit of milk or warm water until they have a soft, slightly creamy consistency.
+            1/3 teaspoon salt, 1/2 teaspoon black pepper
+            Once the dough has rested, it will be even softer. It will be easier to work with and it should not stick to your hands. However, it may stick a little to the table so sprinkle it with a little bit of flour. Then cut off half of the dough and roll it out until it’s very thin, approximately 1-2 mm. Next, using a glass or cup, cut out circles about 3 inches in diameter.
+            On the edge of each of the circles, put a teaspoon of potato and onion filling (don't add too much filling!).
+            Cover the filling by folding the dough over and pinch the edges closed. You can pinch the edges using your thumb and index finger or with a fork.
+            
+            Gather the leftover dough not cut into circles and add it to the other half of the dough. Roll it out and repeat the steps until you have used up all the dough and filling. Now the varenyky are ready for boiling.
+            Bring water to a boil in a large saucepan or pot. Lightly salt it (2 pinches of salt to 3 cups of water), then add the dumplings to the water and wait until they float to the top. After they float, boil for 2 more minutes. If your pot is not very large, you might have to cook the varenyky in batches.
+            Transfer the hot dumplings to a bowl and add a little bit of butter (optional). When it melts on the surface of the hot dumplings, gently stir them so as not to tear the dough, and that each dumpling is greased with butter. This way they won't stick together.
+            Transfer the dumplings to a plate, sprinkle with chopped herbs if desired, and serve. The traditional version is served with sour cream, but there may be other options, such as ketchup or some other sauce. Enjoy!</p>
+
+        <h2>Notes</h2>
+        <ul class="ingredients-list">
+            <li>These dumplings are often frozen raw – this is convenient when you need to quickly prepare dinner. Throw the frozen dumplings into boiling water – after only 5 minutes the dumplings are ready to eat.</li>
+            <li>These potato dumplings can be made without onions. Instead of mashed potatoes, you  can also make them with raw grated potatoes – then they need to be cooked a little longer though.</li>
+            <li>Savory dumplings can also be made with potatoes and mushrooms, only with mushrooms, cabbage or liver. Sweet dumplings are often made with cottage cheese, cherries, strawberries and some other less popular fillings.</li>
+            <li>Do not overstuff the dumplings. This will make closing them harder.</li>
+        </ul>
+    </div>
+
+    <!-- YouTube Video Embed Section -->
+<div class="youtube-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/jrDXt8F6j7o" title="Varenyky Recipe Video" allowfullscreen></iframe>
+</div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Best Ukrainian Food. All rights reserved.</p>
+        <p>Contact: +41 79 706 14 20 | timjob48@gmail.com</p>
+    </footer>
+
+</body>
+</html>

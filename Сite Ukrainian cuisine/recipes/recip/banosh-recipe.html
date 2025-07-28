@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banoch</title>
+    <link rel="stylesheet" href="/main.css">
+    <!-- Link to Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', serif;
+            background-color: #f5f5f5;
+            color: #333;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Keyframes animation for menu and header */
+        @-webkit-keyframes slideInFromTop {
+            0% {
+                -webkit-transform: translateY(-100%);
+                        transform: translateY(-100%);
+                opacity: 0;
+            }
+            100% {
+                -webkit-transform: translateY(0);
+                        transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInFromTop {
+            0% {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Header Styles */
+        header {
+position: relative;
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+    font-size: 36px;
+    overflow: hidden;
+    animation: slideInFromTop 1s ease-out; /* Animation for header */
+    background-image: url('image/banosh1.jpg'); /* Corrected path for the background image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+        /* Navigation Menu */
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 10px;
+            position: relative;
+            z-index: 1;
+            animation: slideInFromTop 1s ease-out 0.5s forwards; /* Animation for navigation */
+        }
+
+        nav a {
+            color: white;
+            font-size: 18px;
+            opacity: 0;
+            animation: fadeIn 1s ease-out 1s forwards; /* Fade in effect for links */
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Banoch Section */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            color: white;
+            padding: 50px;
+            text-align: center;
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+        }
+
+        .about-info {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            max-width: 800px;
+            margin: 20px;
+        }
+
+        .about-info h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .about-info p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        .about-info img {
+            width: 100%;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        /* Ingredients Section */
+        .ingredients-section {
+            padding: 50px;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+
+        .ingredients-section h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .ingredients-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .ingredients-list li {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        /* Preparation Section */
+        .preparation-section {
+            padding: 50px;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .preparation-section h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .preparation-section p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        /* YouTube video container */
+        .youtube-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .youtube-container iframe {
+            max-width: 100%;
+            height: 315px;
+            border: none;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    header {
+        font-size: 28px;
+        padding: 10px 0;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    .about-info {
+        padding: 20px;
+        font-size: 16px;
+    }
+
+    .ingredients-section, .preparation-section {
+        padding: 20px;
+    }
+
+    .youtube-container iframe {
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .about-info {
+        font-size: 14px;
+    }
+
+    .ingredients-section, .preparation-section {
+        padding: 10px;
+    }
+
+        }
+    </style>
+</head>
+<body>
+
+    <!-- New Header with Navigation -->
+    <div class="content">
+        <header>
+            <h1>Banoch</h1>
+            <!-- Navigation menu -->
+            <nav>
+                <a href="/">Home</a>
+                <a href="/recipes">Recipes</a>
+                <a href="/contact">Contact</a>
+                <a href="/about me">About Me</a>
+            </nav>
+        </header>
+    </div>
+
+    <!-- First Image -->
+    <div class="container">
+        <picture>
+            <source srcset="image/banosh2.jpg" media="(max-width: 768px)">
+            <img src="image/banosh2.jpg" alt="Image before text" style="max-width: 800px; width: 100%; height: auto;">
+        </picture>
+    </div>
+
+    <!-- Banoch Story Section -->
+    <div class="container">
+        <div class="about-info">
+            <h2>The History of Banosh</h2>
+            <p>Banosh is a traditional Ukrainian dish that originated in the Carpathian Mountains. It is closely tied to the culture of the mountain people, for whom cooking was not only an essential part of daily life but also a means of survival in the harsh mountain climate. There are many variations of the dish, but it is most commonly made as a thick cornmeal porridge with sour cream and cheese, often served with fried bacon or mushrooms. The history of this dish is deeply connected to rural life and the natural features of the region.</p>
+
+            <h2>The Origin of Banosh</h2>
+            <p>The word "banosh" is believed to come from the word "banya," which in the Carpathians refers to a traditional kitchen or hearth where food is cooked. In ancient times, when modern kitchen appliances were not available, and life was primarily centered around farming and livestock, simple, hearty dishes that could last through the cold months were cooked on the stove. One such dish became banosh, which was prepared in mountain villages using available ingredients such as corn, milk, sour cream, and bacon.
+            Corn was an important crop for Ukrainians, especially in the western regions like Transcarpathia and Bukovina. It became a staple food during the winter months when fresh vegetables and fruits were scarce. Cornmeal was cooked in milk, sometimes with added cheese and sour cream for a richer taste, and was often topped with fried bacon or mushrooms, which were gathered in the forests.</p>
+            
+            <h2>Banosh in Culture</h2>
+            <p>Today, banosh is not just a traditional dish, but a symbol of the mountain culture of Ukraine. It is served in restaurants and at festivals in the Carpathians, and it is often a staple at family gatherings, especially in the colder months. Banosh is considered a true Carpathian delicacy that embodies warmth, coziness, and the hospitality of the mountain people.
+            In recent decades, banosh has gained popularity beyond the Carpathians. Modern chefs and culinary experts often experiment with the dish, adding various ingredients or using more contemporary cooking methods. However, the traditional version of banosh, with its creamy texture and golden crispy bacon topping, remains beloved by many.</p>
+
+            <h2>Conclusion</h2>
+            <p>The story of banosh is not just about a simple Carpathian dish; it is the story of people who found a way to nourish themselves in the harsh mountain environment. This dish embodies the best traditions of Ukrainian cuisine, combining heartiness, accessibility, and rich flavors. Banosh, like other Carpathian dishes, reflects the lives, hard work, and hospitality of the local people, as well as the resilience and dedication to traditions that are passed down from generation to generation.</p>
+        </div>
+    </div>
+
+    <!-- Second Image -->
+    <div class="container">
+        <picture>
+            <source srcset="image/banosh3.jpg" media="(max-width: 768px)">
+            <img src="image/banosh3.jpg" alt="Image in the middle of text" style="max-width: 800px; width: 100%; height: auto;">
+        </picture>
+    </div>
+
+    <!-- Ingredients Section -->
+    <div class="ingredients-section">
+        <h2>Ingredients for Banoch</h2>
+        <ul class="ingredients-list">
+            <li>1/4 cup cornmeal</li>
+            <li>1 tablespoon butter</li>
+            <li>1/4 cup sour cream</li>
+            <li>1 cup whipping cream</li>
+            <li>4 slices bacon</li>
+            <li>1/4 teaspoon salt</li>
+            <li>1/5 teaspoon black pepper</li>
+            <li>2 ounces (sheeps) cheese in brind, e.g. Bryndza or Feta</li>
+        </ul>
+    </div>
+
+    <!-- Preparation Section -->
+    <div class="preparation-section">
+        <h2>Preparation</h2>
+        <p>In a small saucepan, use a spatula to combine the sour cream and cream until completely dissolved. Cook over low heat, stirring, until the cream is hot – but do not bring to a boil.
+            1/4 cup sour cream, 1 cup whipping cream
+            When the cream begins to almost boil, add the cornmeal and salt. Stir with a spatula to prevent lumps from forming.
+            1/4 cup cornmeal, 1/4 teaspoon salt
+            After 5 minutes of stirring, the cornmeal should swell and you’ll end up with a thick corn porridge. If you want a thinner porridge, pour in a little more cream or water and mix. Turn off the heat.
+            Cut the bacon into strips and fry in a frying pan until golden brown.
+            4 slices bacon
+            Transfer the banosh to a deep plate or bowl and place the fried bacon on top. Make a well in the center and put a piece of butter in it. It will start to melt and soak the banosh just before serving.
+            1 tablespoon butter
+            Top the banosh with crumbled cheese, and sprinkle with black pepper. It tastes better when hot.
+            1/5 teaspoon black pepper, 2 ounces (sheeps) cheese in brind</p>
+
+        <h2>Notes</h2>
+        <ul class="ingredients-list">
+            <li>Use good quality ingredients.</li>
+            <li>To make the banosh less fat, you can replace the cream with milk. However, the real Ukrainian banosh is prepared with cream.</li>
+            <li>If you don’t want to use bacon, you can also use ham.</li>
+            <li>Traditionally, banosh is made with bryndza cheese. Alternatively, you can use feta cheese. In general, it’s important that the cheese is pickled (in brine) and soft enough. Hard cheese like cheddar won’t work.</li>
+            <li>Banosh should have a creamy and thick consistency. If necessary, you can adjust it by adding more liquid or cornmeal to achieve the desired texture.</li>
+            <li>If you are using salted butter and very salty cheese, you may want to reduce the extra salt you add.</li>
+            </ul>
+    </div>
+
+    <!-- YouTube Video Embed Section -->
+<div class="youtube-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/jBvNNSCyfdQ" title="Banoch Recipe Video" allowfullscreen></iframe>
+</div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Best Ukrainian Food. All rights reserved.</p>
+        <p>Contact: +41 79 706 14 20 | timjob48@gmail.com</p>
+    </footer>
+
+</body>
+</html>

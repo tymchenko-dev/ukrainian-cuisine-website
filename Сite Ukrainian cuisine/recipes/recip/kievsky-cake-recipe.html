@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiev Cake</title>
+    <link rel="stylesheet" href="/main.css">
+    <!-- Link to Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Keyframes animation for menu and header */
+        @keyframes slideInFromTop {
+            0% {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Header Styles */
+        header {
+            position: relative;
+            text-align: center;
+            padding: 20px 0;
+            color: white;
+            font-size: 36px;
+            overflow: hidden;
+            animation: slideInFromTop 1s ease-out; /* Animation for header */
+            background-image: url('image/kievsky-cake1.jpg'); /* Correct path for the background image */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        /* Navigation Menu */
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 10px;
+            position: relative;
+            z-index: 1;
+            animation: slideInFromTop 1s ease-out 0.5s forwards; /* Animation for navigation */
+        }
+
+        nav a {
+            color: white;
+            font-size: 18px;
+            opacity: 0;
+            animation: fadeIn 1s ease-out 1s forwards; /* Fade in effect for links */
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Banoch Section */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            color: white;
+            padding: 50px;
+            text-align: center;
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+        }
+
+        .about-info {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            max-width: 800px;
+            margin: 20px;
+        }
+
+        .about-info h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .about-info p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        .about-info img {
+            width: 100%;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        /* Ingredients Section */
+        .ingredients-section {
+            padding: 50px;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+
+        .ingredients-section h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .ingredients-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .ingredients-list li {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        /* Preparation Section */
+        .preparation-section {
+            padding: 50px;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .preparation-section h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .preparation-section p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        /* YouTube video container */
+        .youtube-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .youtube-container iframe {
+            max-width: 100%;
+            height: 450px;
+            border: none;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- New Header with Navigation -->
+    <div class="content">
+        <header>
+            <h1>Kiev Cake</h1>
+            <!-- Navigation menu -->
+            <nav>
+                <a href="/">Home</a>
+                <a href="/recipes">Recipes</a>
+                <a href="/contact">Contact</a>
+                <a href="/about me">About Me</a>
+            </nav>
+        </header>
+    </div>
+
+    <!-- First Image -->
+    <div class="container">
+        <picture>
+            <source srcset="image/kievsky-cake2.jpg" media="(max-width: 768px)">
+            <img src="image/kievsky-cake2.jpg" alt="Image before text" style="max-width: 800px; width: 100%; height: auto;">
+        </picture>
+    </div>
+
+    <!-- Banoch Story Section -->
+    <div class="container">
+        <div class="about-info">
+            <h2>The History of Kiev Cake</h2>
+            <p>Kyiv cake is one of the most famous and beloved desserts in Ukraine, capturing the hearts of many people both in the country and abroad. It’s hard to imagine that this culinary masterpiece could have gone unnoticed, yet its path to success wasn’t as straightforward as it seems.</p>
+            
+            <h2>The Creation of the Cake: A Culinary Experiment</h2>
+            <p>According to the official version, Kyiv cake was created in 1956 in Kyiv at the "Kyiv Canning Factory," which later became known as the "Roshen" confectionery factory. The cake was designed as a dessert for foreign guests and to showcase Ukrainian confectionery expertise on the international stage. The name "Kyiv" symbolized not only the capital of Ukraine but also the ambition to present refined local culinary traditions.
+            The cake was created by a team of talented confectioners who experimented with new combinations of ingredients. Inspired by European pastry traditions, they decided to create a cake combining a crispy meringue base, a light cream filling, and a nutty flavor. This concept became the foundation for the recipe that later gained worldwide recognition.</p>
+
+            <h2>Ingredients and Features</h2>
+            <p>Kyiv cake consists of several layers: crispy meringue layers, a light cream filling made from butter and condensed milk, and walnuts that give the dessert a unique texture and taste. The exterior of the cake is covered in walnuts and has a characteristic golden-brown color. This cake is not only distinguished by its unique recipe but also by its complexity in preparation — each layer requires precision and attention to detail.
+            The hallmark of Kyiv cake is its airy structure. The combination of crispy meringue and soft cream creates a delightful contrast of textures. Moreover, the taste is perfectly balanced: the cream is not too heavy, while the nuts and meringue add sweetness and richness.</p>
+            
+            <h2>Rise to Fame</h2>
+            <p>Kyiv cake quickly became a symbol of culinary sophistication and was often served at festive tables, especially in large cities. It became a dessert associated with special occasions, such as weddings, anniversaries, and important gatherings. The cake’s unique combination of textures and flavors made it a prized offering at celebrations and a symbol of high-quality local confectionery.
+            Kyiv cake was so beloved that it was eventually exported abroad, bringing a taste of Ukrainian culinary artistry to other countries.</p>
+
+            <h2>Evolution and Modern Popularity</h2>
+            <p>After the change in political landscape, Kyiv cake continued to be a beloved dessert in independent Ukraine. Today, it can be found not only in confectionery shops and cafes across Ukraine but also abroad. In various countries, Kyiv cake is often associated with high-quality Ukrainian confectionery products.
+            Modern variations of Kyiv cake sometimes include fruit or chocolate, but the classic version remains unchanged. Despite these adaptations, Kyiv cake remains a symbol of Ukraine’s culinary culture, appreciated not only for its taste but also for the history behind every layer.</p>
+                            
+            <h2>A Culinary Pride of Ukraine</h2>
+            <p>Today, Kyiv cake is more than just a dessert; it is a true cultural symbol. It embodies Ukraine's craftsmanship and culinary traditions. The cake continues to delight people both in Ukraine and around the world, remaining not only a symbol of refined taste but also a piece of the country’s rich history.
+            The love for Kyiv cake, its exquisite flavor, and its unique texture make it a true masterpiece of pastry, deserving of a special place in the hearts of sweet lovers everywhere.</p>
+        </div>
+    </div>
+
+    <!-- Second Image -->
+    <div class="container">
+        <picture>
+            <source srcset="image/kievsky-cake3.jpg" media="(max-width: 768px)">
+            <img src="image/kievsky-cake3.jpg" alt="Image in the middle of text" style="max-width: 800px; width: 100%; height: auto;">
+        </picture>
+    </div>
+
+    <!-- Ingredients Section -->
+    <div class="ingredients-section">
+        <h2>Ingredients for Kiev Cake</h2>
+        <ul class="ingredients-list">
+            <li>1/3 cup wheat flour</li>
+            <li>1/3 cup granulated sugar for the nut mixture</li>
+            <li>1 1/2 cup toasted hazelnuts</li>
+            <li>8 egg whites aged for at least 12 hours at room temp</li>
+            <li>1 1/2 cup granulated sugar for the cake base</li>
+            <li>1/4 tsp cream of tartar</li>
+            <li>1/2 tsp vanilla extract</li>
+            <li>2 eggs</li>
+            <li>1 1/4 cup sugar</li>
+            <li>1 cup milk</li>
+            <li>1/2 tsp vanilla extract</li>
+            <li>3-4 sticks butter 1 3/4- 2 cups softened</li>
+            <li>3 tbsp rum or cognac</li>
+            <li>1/4 cup cocoa powder</li>
+
+        </ul>
+    </div>
+
+    <!-- Preparation Section -->
+    <div class="preparation-section">
+        <h2>Preparation</h2>
+        <p>Trace a 9 inch circle on 2 sheets of parchment paper. Set aside for later use.
+            In a bowl combine wheat flour with 1/3 cup sugar. Then add the chopped hazel nuts and mix to combine.
+            In the bowl of a stand mixer, beat the egg whites on high speed until foamy,
+            
+            Add the cream of tartar and beat until soft peaks begin to form. Add the sugar and vanilla and beat until stiff peaks form.
+            Gently fold in the hazel nut and flour mixture into the egg whites.
+            Dab 5 dots of the meringue onto each baking sheet. Lay the prepared parchment paper on top (traced side down). This will help hold the parchment in place.
+            Split the hazelnut meringue amongst the 2 (9 inch) circles. Try to spread within the lines as bet as possible. Bake at 300 degrees Fahrenheit for 10 minutes then drop the temperature to 220 degrees Fahrenheit, bake for another 3 hours and 45 minutes.
+            Let the meringue cool completely. Place a 9 inch round pan on top and cut around the edges. Do this to both cakes. Reserve the outside edge that's been cut; you will need it to coat the sides of the finished cake.
+            In a bowl lightly beat 2 eggs with 1 1/4 cup sugar.
+            In a sauce pan, bring the milk to a simmer (not a boil). Slowly pour it into the eggs and sugar making sure to stir constantly.
+            Pour the egg and milk mixture back into the saucepan and continue stirring over medium low heat until it becomes yellow and thickened. This may take up to 10-15 minutes.
+            
+            Remove the saucepan from heat and add the vanilla extract. Stir to combine. Let it cool to room temperature.
+            Beat the room temperature butter in a stand mixer using the whisk attachment.
+            Pour in the cooled egg mixture while continuing to mix. Then add the rum.
+            Reserve 1 1/2 cups of the butter cream. Combine it with 1/4 cup cocoa powder.
+            Spread the white buttercream on top of the first meringue layer. Don't use up all of the white butter cream; reserve about 1/3 cup for decorating.
+            Place the second meringue layer on top of the buttercream. Then spread enough buttercream to thinly coat the sides of the cake.
+            Spread the chocolate buttercream on the top portion of the cake.
+            Coat the sides of the cake with the left over meringue crumbles. From here, decorate the cake as you wish.</p>
+
+        </ul>
+    </div>
+
+    <!-- YouTube Video Embed Section -->
+<div class="youtube-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/7qSPbg71vUw" title="Kiev Cake Recipe Video" allowfullscreen></iframe>
+</div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Best Ukrainian Food. All rights reserved.</p>
+        <p>Contact: +41 79 706 14 20 | timjob48@gmail.com</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+/* styles.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', serif; /* Применение Montserrat */
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+    background-image: url('Сontacte me image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}

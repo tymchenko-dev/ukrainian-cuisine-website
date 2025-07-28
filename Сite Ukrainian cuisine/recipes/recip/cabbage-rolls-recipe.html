@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holubtsi</title>
+    <link rel="stylesheet" href="/main.css">
+    <!-- Link to Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Keyframes animation for menu and header */
+        @keyframes slideInFromTop {
+            0% {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Header Styles */
+        header {
+            position: relative;
+            text-align: center;
+            padding: 20px 0;
+            color: white;
+            font-size: 36px;
+            overflow: hidden;
+            animation: slideInFromTop 1s ease-out; /* Animation for header */
+            background-image: url('image/cabbage-rolls1.jpg'); /* Correct path for the background image */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        /* Navigation Menu */
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 10px;
+            position: relative;
+            z-index: 1;
+            animation: slideInFromTop 1s ease-out 0.5s forwards; /* Animation for navigation */
+        }
+
+        nav a {
+            color: white;
+            font-size: 18px;
+            opacity: 0;
+            animation: fadeIn 1s ease-out 1s forwards; /* Fade in effect for links */
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Banoch Section */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            color: white;
+            padding: 50px;
+            text-align: center;
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+        }
+
+        .about-info {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            max-width: 800px;
+            margin: 20px;
+        }
+
+        .about-info h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .about-info p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        .about-info img {
+            width: 100%;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        /* Ingredients Section */
+        .ingredients-section {
+            padding: 50px;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+
+        .ingredients-section h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .ingredients-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .ingredients-list li {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        /* Preparation Section */
+        .preparation-section {
+            padding: 50px;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .preparation-section h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .preparation-section p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        /* YouTube video container */
+        .youtube-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .youtube-container iframe {
+            max-width: 100%;
+            height: 450px;
+            border: none;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- New Header with Navigation -->
+    <div class="content">
+        <header>
+            <h1>Cabbage Rolls</h1>
+            <!-- Navigation menu -->
+            <nav>
+                <a href="/">Home</a>
+                <a href="/recipes">Recipes</a>
+                <a href="/contact">Contact</a>
+                <a href="/about me">About Me</a>
+            </nav>
+        </header>
+    </div>
+
+    <!-- First Image -->
+    <div class="container">
+        <picture>
+            <source srcset="image/cabbage-rolls2.jpg" media="(max-width: 768px)">
+            <img src="image/cabbage-rolls2.jpg" alt="Image before text" style="max-width: 800px; width: 100%; height: auto;">
+        </picture>
+    </div>
+
+    <!-- Banoch Story Section -->
+    <div class="container">
+        <div class="about-info">
+            <h2>The History of Holubtsi</h2>
+            <p>The history of Ukrainian stuffed cabbage rolls (known as "holubtsi") is a fascinating tale of how a traditional dish, originating in ancient times, gradually became an integral part of Ukrainian national cuisine. Like many other dishes, holubtsi have a rich history, evolving over the centuries as they adapted to local ingredients, conditions, and cultural traditions.</p>
+            
+            <h2>The Origins of Holubtsi</h2>
+            <p>Holubtsi (or sometimes called "kapustniaky") are an ancient dish that has spread across many countries, not just Ukraine, but also Russia, Poland, Georgia, Bulgaria, and other Eastern European nations. There are several theories about the origins of this dish, but one of the most plausible is that holubtsi were brought to Ukraine from the East. In this context, they can be seen as a result of Turkish or Persian culinary influence, where similar stuffed dishes, wrapped in leaves, were popular.
+            The word "holubtsi" is linked to the word "holub" (dove), as early stuffed cabbage rolls likely resembled birds in shape, wrapped up in a "wing-like" fashion. The culinary name and the idea of wrapping filling in leaves were borrowed and then adapted to local traditions.</p>
+
+            <h2>Holubtsi in Ukrainian Cuisine</h2>
+            <p>Holubtsi became popular in Ukraine during the 15th-16th centuries. At that time, Ukraine's agricultural culture was developing, and cabbage became an essential crop. This is when holubtsi gained widespread popularity as a winter dish, since cabbage kept well during the colder months.
+            Traditional Ukrainian holubtsi are stuffed cabbage leaves, filled with either meat or vegetables, and are typically made with rice, buckwheat, or other grains, along with spices and aromatic herbs. In the classic version, the filling includes minced meat (usually pork or beef) with rice or other grains. An important feature of holubtsi is the sauce in which they are cooked: this can be a tomato-based sauce, sour cream, broth, or a combination of these.
+            Holubtsi were not only a staple of everyday meals but also an essential part of celebrations and family events. In Ukraine, there are many regional variations of holubtsi depending on local preferences, but one thing remains constant: they must be hearty and delicious, symbolizing warmth, home, and hospitality.</p>
+            
+            <h2>Holubtsi in Historical Context</h2>
+            <p>Like many other dishes, holubtsi have evolved over time. With the development of trade and connections with other cultures, new ingredients were introduced to Ukraine, which influenced the flavor of holubtsi. In the 19th century, when Ukraine became part of the Russian Empire, holubtsi grew even more popular, spreading throughout the Empire and becoming a symbol of the common people's cuisine.
+            During times of famine and hardship, such as the Holodomor and other crises, holubtsi became one of the few available ways to feed a family using simple, accessible ingredients—cabbage, rice, and meat. After World War II, holubtsi continued to be a popular dish in everyday life, as well as on festive tables. In the Soviet Union, they were enjoyed and loved not only in Ukraine but also in other republics.
+            With the fall of the Soviet Union and Ukraine gaining independence, holubtsi regained their status as a national dish, becoming a symbol of tradition and national identity.</p>
+
+            <h2>Holubtsi as a Cultural Symbol</h2>
+            <p>In Ukraine, holubtsi are more than just food; they are an important part of the national identity. They symbolize simplicity, the warmth of home, hospitality, and care. This recipe is often passed down through generations and is an important element of Ukrainian culinary tradition.
+            Moreover, holubtsi have cultural significance during Ukrainian holidays and customs. They are often prepared for weddings, baptisms, birthdays, and other important events. This dish has become part of not just everyday meals but also special moments when the whole family gathers around the table.</p>
+                            
+            <h2>Conclusion</h2>
+            <p>Ukrainian holubtsi are much more than just a delicious and hearty dish. They embody the culture and traditions of the Ukrainian people, blending elements of history, culinary artistry, and family values. With every bite of holubtsi, we not only savor their unique flavor but also connect with the centuries-old history that stands behind this beloved dish.</p>
+        </div>
+    </div>
+
+    <!-- Second Image -->
+    <div class="container">
+        <picture>
+            <source srcset="image/cabbage-rolls3.jpg" media="(max-width: 768px)">
+            <img src="image/cabbage-rolls3.jpg" alt="Image in the middle of text" style="max-width: 800px; width: 100%; height: auto;">
+        </picture>
+    </div>
+
+    <!-- Ingredients Section -->
+    <div class="ingredients-section">
+        <h2>Ingredients for Holubtsi</h2>
+        <ul class="ingredients-list">
+            <li>1 pound minced meat</li>
+            <li>1/3 cup rice, cooked</li>
+            <li>1 egg</li>
+            <li>1/2 teaspoon salt</li>
+            <li>1/2 teaspoon coriander</li>
+            <li>1/2 teaspoon paprika powder</li>
+            <li>1/2 teaspoon granulated garlic</li>
+            <li>1 tablespoon oil, for frying</li>
+            <li>1 medium onion, chopped</li>
+            <li>1 medium carrot, grated</li>
+            <li>8 – 10 cabbage leaves</li>
+            <li>1 cup tomato sauce</li>
+            <li>3 tablespoons sour cream, plus extra for serving</li>
+        </ul>
+    </div>
+
+    <!-- Preparation Section -->
+    <div class="preparation-section">
+        <h2>Preparation</h2>
+        <p>In a large bowl, combine minced meat, rice, egg, salt, coriander, paprika, and granulated garlic. Mix well with your hands or a fork.
+            1 pound minced meat, 1 egg, 1/3 cup rice, 1/2 teaspoon salt, 1/2 teaspoon coriander, 1/2 teaspoon paprika powder, 1/2 teaspoon granulated garlic
+            Cover the bowl with plastic wrap or a lid and place it in the fridge.
+            Heat oil in a large skillet over medium-high heat. Add the grated carrots and chopped onions and sauté for about 5 minutes, stirring occasionally.
+            1 medium onion, 1 tablespoon oil, 1 medium carrot
+            Dip the cabbage leaves one by one into a bowl filled with boiling water and blanch them until soft, about 3-4 minutes. It is important not to blanch them for too long, otherwise, the leaves may fall apart.
+            8 – 10 cabbage leaves
+            Place 2-3 tablespoons of the meat filling on the edge of a cabbage leaf, fold in the sides, and roll it up tightly. You can secure it with cooking twine if necessary. Repeat with the remaining leaves and filling.
+            Add half of the fried onions and carrots to the bottom of a deep pot. Place the cabbage rolls on top. Add the remaining onions and carrots on top.
+            In a small bowl, combine the tomato sauce and sour cream. Pour the mixture over the cabbage rolls.
+            1 cup tomato sauce, 3 tablespoons sour cream
+            Cover the pot with a lid and cook the cabbage rolls over low heat for about 40 minutes until the meat is cooked through.
+            Serve the stuffed cabbage rolls hot or warm, topped with sour cream and fresh herbs.</p>
+
+        <h2>Notes</h2>
+        <ul class="ingredients-list">
+            <li>You can use napa cabbage leaves instead of white cabbage leaves if you prefer.</li>
+            <li>You can use whatever minced meat you have on hand for the filling. A traditional choice is a mix of beef and pork, but you can also use chicken or turkey.</li>
+            <li>You can omit the egg from the filling if you prefer</li>
+            <li>Don’t overcook the rice – it should be just cooked. Otherwise, it may become too mushy in the cabbage rolls.</li>
+            <li>You can adjust the seasonings for the filling to your liking.</li>
+            <li>Instead of using tomato sauce, you can also cook the cabbage rolls in tomato juice.</li>
+            <li>For best results, cook the cabbage rolls over low heat.</li>
+            <li>You can cook the stuffed cabbage in the oven or in a slow cooker instead of on the stove.</li>
+        </ul>
+    </div>
+
+    <!-- YouTube Video Embed Section -->
+<div class="youtube-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/iROp4BmiiIY" title="Cabbage rolls Recipe Video" allowfullscreen></iframe>
+</div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Best Ukrainian Food. All rights reserved.</p>
+        <p>Contact: +41 79 706 14 20 | timjob48@gmail.com</p>
+    </footer>
+
+</body>
+</html>

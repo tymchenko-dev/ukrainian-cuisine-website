@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic Chicken Kiev</title>
+    <link rel="stylesheet" href="/main.css">
+    <!-- Link to Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Keyframes animation for menu and header */
+        @keyframes slideInFromTop {
+            0% {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Header Styles */
+        header {
+            position: relative;
+            text-align: center;
+            padding: 20px 0;
+            color: white;
+            font-size: 36px;
+            overflow: hidden;
+            animation: slideInFromTop 1s ease-out; /* Animation for header */
+            background-image: url('image/classic chicken kiev1.jpg'); /* Correct path for the background image */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        /* Navigation Menu */
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 10px;
+            position: relative;
+            z-index: 1;
+            animation: slideInFromTop 1s ease-out 0.5s forwards; /* Animation for navigation */
+        }
+
+        nav a {
+            color: white;
+            font-size: 18px;
+            opacity: 0;
+            animation: fadeIn 1s ease-out 1s forwards; /* Fade in effect for links */
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Banoch Section */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            color: white;
+            padding: 50px;
+            text-align: center;
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+        }
+
+        .about-info {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            max-width: 800px;
+            margin: 20px;
+        }
+
+        .about-info h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .about-info p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        .about-info img {
+            width: 100%;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        /* Ingredients Section */
+        .ingredients-section {
+            padding: 50px;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+
+        .ingredients-section h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .ingredients-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .ingredients-list li {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        /* Preparation Section */
+        .preparation-section {
+            padding: 50px;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .preparation-section h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .preparation-section p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        /* YouTube video container */
+        .youtube-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .youtube-container iframe {
+            max-width: 100%;
+            height: 450px;
+            border: none;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- New Header with Navigation -->
+    <div class="content">
+        <header>
+            <h1>Classic Chicken Kiev</h1>
+            <!-- Navigation menu -->
+            <nav>
+                <a href="/">Home</a>
+                <a href="/recipes">Recipes</a>
+                <a href="/contact">Contact</a>
+                <a href="/about me">About Me</a>
+            </nav>
+        </header>
+    </div>
+
+    <!-- First Image -->
+    <div class="container">
+        <picture>
+            <source srcset="image/classic chicken kiev2.jpg" media="(max-width: 768px)">
+            <img src="image/classic chicken kiev2.jpg" alt="Image before text" style="max-width: 800px; width: 100%; height: auto;">
+        </picture>
+    </div>
+
+    <!-- Banoch Story Section -->
+    <div class="container">
+        <div class="about-info">
+            <h2>The History of Classic Chicken Kiev</h2>
+            <p>Chicken Kiev is one of the most famous and beloved dishes not only in Ukraine but also abroad. Despite the dish's name referencing Kiev, its origin and journey to fame involve many interesting factors and stories.</p>
+
+            <h2>The Origins of Classic Chicken Kiev</h2>
+            <p>There are several theories about the origin of Chicken Kiev, but most historians agree that it appeared at the end of the 19th and beginning of the 20th century in Kiev. One of the popular versions is that the dish was developed in one of the restaurants in central Kiev to showcase the skill of local chefs and attract the attention of foreign guests.
+            According to one legend, the dish was created by a French chef working in one of Kiev's restaurants. The chef was inspired by the idea of preparing an exquisite dish for guests, but with a local twist. He decided to take a classic French recipe for a meat cutlet, wrap it in chicken fillet, add butter and herbs, and then fry it to a golden crust. The new flavor quickly gained popularity and became a staple on the menus of many city restaurants.</p>
+
+            <h2>Butter – The Heart of the Dish</h2>
+            <p>One of the key elements of Chicken Kiev is the filling of butter and herbs. This filling serves as both a flavor accent and a source of softness and juiciness for the chicken fillet. According to one version, butter with herbs was added to emphasize the sophistication of the dish and give it a unique taste that matched the high culinary standards of the time.
+            A similar approach was used in other European countries, but the combination of butter, chicken, and herbs in the Ukrainian version became something uniquely distinctive.</p>
+            
+            <h2>Popularization in the Soviet Union</h2>
+            <p>While Chicken Kiev originated in Kiev, the dish's real boom came during the Soviet era, when it became popular throughout the USSR. In Soviet times, Chicken Kiev was not only a restaurant delicacy but also a gastronomic symbol of high-class cuisine. It was often served at festive tables, in hotels and restaurants, as well as in cafeterias for foreign delegations, where it was considered one of the main dishes showcasing the "high art" of Soviet cooking.</p>
+
+            <h2>Recipe and Cooking Technique</h2>
+            <p>Unlike traditional cutlets, Chicken Kiev is made not from minced meat, but from chicken fillet, which is carefully wrapped in breadcrumbs. Inside the cutlet is a soft filling of butter, often mixed with herbs, garlic, and spices. The cutlet is fried to a crisp golden crust, and when cut, the butter flows out, creating a juicy and aromatic experience.
+            The technique of cooking is also an important part of the recipe. The chicken fillet must be sealed carefully to ensure the butter does not leak, while still keeping the fillet tender and juicy.</p>
+                            
+            <h2>Modern Significance</h2>
+            <p>Today, Chicken Kiev remains a popular dish, found in restaurants throughout Ukraine and beyond. It is also made at home, while maintaining the classic recipe with elements of modern interpretation. Chicken Kiev has become not only a symbol of Ukrainian culinary culture but also a gastronomic brand recognized internationally.
+            No matter where you try it, Chicken Kiev will always be associated with something refined and delicious, embodying the richness and depth of Ukraine's culinary traditions.</p>
+        </div>
+    </div>
+
+    <!-- Second Image -->
+    <div class="container">
+        <picture>
+            <source srcset="image/classic chicken kiev3.jpg" media="(max-width: 768px)">
+            <img src="image/classic chicken kiev3.jpg" alt="Image in the middle of text" style="max-width: 800px; width: 100%; height: auto;">
+        </picture>
+    </div>
+
+    <!-- Ingredients Section -->
+    <div class="ingredients-section">
+        <h2>Ingredients for Classic Chicken Kiev</h2>
+        <ul class="ingredients-list">
+            <li>2 chicken breasts, skinless, boneless</li>
+            <li>3 tablespoons butter, soft</li>
+            <li>4-5 sprigs parsley, chopped</li>
+            <li>1/3 teaspoon garlic powder</li>
+            <li>1/3 teaspoon salt</li>
+            <li>1/4 teaspoon black pepper</li>
+            <li>1 egg, beaten</li>
+            <li>5 tablespoons all-purpose flour</li>
+            <li>5 tablespoons breadcrumbs</li>
+            <li>1/3 cup frying oil</li>
+
+        </ul>
+    </div>
+
+    <!-- Preparation Section -->
+    <div class="preparation-section">
+        <h2>Preparation</h2>
+        <p>Preheat the oven to 375 degrees Fahrenheit.
+            Using a sharp knife, fillet the chicken breasts (slice it horizontally into two even pieces). Don't cut all the way through, as you want to be able to "fold it open". Cut off a small piece of the end of the flattened breasts to use to cover the butter later.
+            2 chicken breasts
+            Place the sliced chicken breasts on a cutting board and cover with plastic wrap. Gently pound each piece of chicken with a meat mallet to flatten further.
+            In a bowl, mix the softened butter with the chopped parsley and garlic. Shape the butter into a small block.
+            3 tablespoons butter, 4-5 sprigs parsley, 1/3 teaspoon garlic powder
+            Salt and pepper the chicken fillet. Place half of the butter on the edge of each pounded chicken breast. Then place the small pieces of chicken that you cut off earlier on top of the butter.
+            1/3 teaspoon salt, 1/4 teaspoon black pepper
+            Roll up the flattened chicken breasts tightly, starting on the side with the butter, tucking in the edges as you roll. Secure with skewers if necessary.
+            Pour breadcrumbs into one bowl, flour into another, and the beaten egg into a third.
+            5 tablespoons all-purpose flour, 5 tablespoons breadcrumbs, 1 egg
+            Dredge the chicken in the flour, then dip it in the beaten eggs. Roll the chicken in flour and egg again, then roll it around in the breadcrumbs until completely coated.
+            Pour cooking oil in a frying pan. When hot, add the chicken and fry on both sides for 3 minutes over medium heat.
+            1/3 cup frying oil
+            Transfer the cutlets to a baking dish and cover with foil. Bake in the oven for 15 minutes until fully cooked. The chicken should reach an internal temperature of 165 degrees Fahrenheit.
+            Remove the baking dish from the oven and let the chicken rest for a couple of minutes. Then serve immediately while the butter inside is still melted. Enjoy!</p>
+
+        <h2>Notes</h2>
+        <ul class="ingredients-list">
+            <li>You can use store-bought breadcrumbs, but homemade breadcrumbs are worth it because they are fresh and don’t contain additional seasoning.</li>
+            <li>You can make the butter with herbs and garlic ahead of time and freeze it or store it in the fridge for a couple of days. It’s easier to roll the chicken when the butter is hard.</li>
+            <li>Instead of granulated garlic or garlic powder, you can add fresh minced garlic to the butter instead.</li>
+            <li>Pound the chicken to a uniform thickness to ensure even cooking. Be gentle, you don’t want to pound holes in the chicken.</li>
+
+        </ul>
+    </div>
+
+    <!-- YouTube Video Embed Section -->
+<div class="youtube-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/jsJF0BYjbWg" title="Classic Chicken Kiev Recipe Video" allowfullscreen></iframe>
+</div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Best Ukrainian Food. All rights reserved.</p>
+        <p>Contact: +41 79 706 14 20 | timjob48@gmail.com</p>
+    </footer>
+
+</body>
+</html>

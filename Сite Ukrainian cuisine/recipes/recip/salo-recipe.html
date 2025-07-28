@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salo</title>
+    <link rel="stylesheet" href="/main.css">
+    <!-- Link to Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Keyframes animation for menu and header */
+        @keyframes slideInFromTop {
+            0% {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Header Styles */
+        header {
+            position: relative;
+            text-align: center;
+            padding: 20px 0;
+            color: white;
+            font-size: 36px;
+            overflow: hidden;
+            animation: slideInFromTop 1s ease-out; /* Animation for header */
+            background-image: url('image/salo(lard)1.jpg'); /* Correct path for the background image */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        /* Navigation Menu */
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 10px;
+            position: relative;
+            z-index: 1;
+            animation: slideInFromTop 1s ease-out 0.5s forwards; /* Animation for navigation */
+        }
+
+        nav a {
+            color: white;
+            font-size: 18px;
+            opacity: 0;
+            animation: fadeIn 1s ease-out 1s forwards; /* Fade in effect for links */
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Banoch Section */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            color: white;
+            padding: 50px;
+            text-align: center;
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+        }
+
+        .about-info {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            max-width: 800px;
+            margin: 20px;
+        }
+
+        .about-info h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .about-info p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        .about-info img {
+            width: 100%;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        /* Ingredients Section */
+        .ingredients-section {
+            padding: 50px;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+
+        .ingredients-section h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .ingredients-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .ingredients-list li {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        /* Preparation Section */
+        .preparation-section {
+            padding: 50px;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .preparation-section h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .preparation-section p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        /* YouTube video container */
+        .youtube-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .youtube-container iframe {
+            max-width: 100%;
+            height: 450px;
+            border: none;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- New Header with Navigation -->
+    <div class="content">
+        <header>
+            <h1>Salo</h1>
+            <!-- Navigation menu -->
+            <nav>
+                <a href="/">Home</a>
+                <a href="/recipes">Recipes</a>
+                <a href="/contact">Contact</a>
+                <a href="/about me">About Me</a>
+            </nav>
+        </header>
+    </div>
+
+    <!-- First Image -->
+    <div class="container">
+        <picture>
+            <source srcset="image/salo(lard)2.jpg" media="(max-width: 768px)">
+            <img src="image/salo(lard)2.jpg" alt="Image before text" style="max-width: 800px; width: 100%; height: auto;">
+        </picture>
+    </div>
+
+    <!-- Banoch Story Section -->
+    <div class="container">
+        <div class="about-info">
+            <h2>The History of Salo</h2>
+            <p>Salo, a cherished staple of Ukrainian cuisine, has long been a symbol of the country’s agricultural heritage, cultural resilience, and culinary ingenuity. This simple yet flavorful food, made from cured pork fat, has been an integral part of Ukrainian life for centuries. Not just a food, salo carries deep cultural significance, representing hospitality, tradition, and the ability to make the most of every part of the animal.</p>
+
+            <h2>The Origins of Salo</h2>
+            <p>Salo’s roots in Ukrainian cuisine date back to ancient times. The domestication of pigs in Eastern Europe around 2,000 years ago brought the practice of preserving pork fat, which became especially important in regions where refrigeration was unavailable. Early on, salo was not just a tasty treat—it was a practical way to ensure that people could preserve food for long winters and hard times.
+            The word "salo" itself likely originates from the Old Slavic term for fat or lard, and the process of curing fatback and preserving it with salt, garlic, and spices became widespread in Ukrainian villages. In a time when access to fresh meat was limited, especially during cold months, salo was a valuable source of energy and nutrition. Ukrainian families would raise pigs, slaughter them during the fall, and preserve as much of the meat and fat as possible. This preservation method was a means of survival, ensuring that families could eat throughout the year.</p>
+
+            <h2>Salo as a Folk Food</h2>
+            <p>In Ukrainian folk tradition, salo was more than just a food— it was a symbol of the country’s agrarian lifestyle. Ukrainians took great pride in their ability to produce their own food, and salo became a quintessential example of self-sufficiency. From farmhouses to city kitchens, salo was prepared in many different ways, but it was almost always consumed with bread, onions, or garlic, making it a hearty, everyday meal.
+            The method of preparing salo varies by region. It could be smoked, salted, or pickled, with each process imparting its own unique flavor and texture. Some regions of Ukraine would also add spices such as black pepper, paprika, or herbs to enhance the flavor. In the Carpathian mountains, for example, people would often smoke the fat, giving it a rich, aromatic taste that paired wonderfully with rustic rye bread.
+            Salo was traditionally served as part of communal meals, particularly in rural areas. It was often shared among family and friends during holidays or significant events, such as weddings, birthdays, and harvest festivals. In some areas of Ukraine, salo would be given as a gift to guests as a sign of welcome and respect.</p>
+            
+            <h2>Salo and Ukrainian Identity</h2>
+            <p>Throughout Ukrainian history, salo became much more than a food—it became a symbol of Ukrainian identity and resilience. During times of hardship, particularly during periods of famine, salo was one of the few foods that could be stored and relied upon. Its role as a vital source of sustenance helped people endure some of the harshest periods in Ukrainian history.
+            In the 20th century, salo became a symbol of the enduring spirit of the Ukrainian people. Whether during the struggles of war or the difficult years of economic hardship, salo remained a staple in every Ukrainian home. It became a symbol of comfort and survival, a reminder that even in the most challenging of times, Ukrainians had the ability to make do with what they had and continue to thrive.
+            Salo also became a symbol of cultural pride. As Ukraine fought to maintain its independence and cultural heritage, salo represented a link to Ukrainian traditions and the country’s agrarian past. In many ways, the act of preparing and sharing salo was an act of resistance—preserving not just a food, but a way of life.</p>
+
+            <h2>Salo in Modern Ukrainian Cuisine</h2>
+            <p>Today, salo continues to be a beloved and essential part of Ukrainian cuisine. While modern refrigeration and transportation have made the preservation of meat and fat easier, salo remains an iconic dish, deeply tied to Ukrainian culture. It can be found in virtually every Ukrainian home and is a common feature at festive gatherings, from family dinners to national holidays.
+            Salo is often served in a variety of ways. One of the most popular ways to enjoy salo is simply sliced thinly and eaten with rye bread, often accompanied by raw onions, garlic, and pickles. It’s also common to enjoy salo with a shot of horilka (Ukrainian vodka), a pairing that has become almost as traditional as the salo itself. In some regions, it’s also used in cooking, added to stews or used as a base for frying. The salty, savory flavor of salo enhances many dishes, making it a versatile ingredient in Ukrainian kitchens.
+            There has been a resurgence of interest in salo in recent years, particularly among younger generations, who are embracing the food as a symbol of Ukrainian heritage and national pride. While salo was once viewed as a peasant food, it has now gained recognition as a gourmet delicacy, with chefs experimenting with new ways to prepare and present it. In fact, several Ukrainian restaurants have created modern twists on traditional salo dishes, incorporating creative techniques and international flavors, while still honoring the classic recipes that have been passed down through generations.</p>
+                            
+            <h2>Salo as a Symbol of Ukrainian Hospitality</h2>
+            <p>Salo is not just a food—it is an expression of Ukrainian hospitality and generosity. When guests come to a Ukrainian home, it is common to be offered a slice of salo, often accompanied by bread and a warm welcome. The sharing of salo reflects the warmth of Ukrainian culture, where food is always an important part of bringing people together.
+            The act of offering salo is often seen as a sign of respect and appreciation for those who visit. Whether served at a family gathering, a celebration, or just as a treat during a casual visit, salo embodies the spirit of togetherness and hospitality that is central to Ukrainian culture.</p>
+
+            <h2>Conclusion</h2>
+            <p>Ukrainian salo is far more than just a food; it is a cultural symbol, a piece of history, and a beloved tradition that continues to thrive today. From its origins as a practical way to preserve pork fat to its place at the center of Ukrainian family meals, salo has earned its place as a symbol of Ukrainian resilience, hospitality, and national pride. Whether served with bread, vodka, or as an ingredient in other dishes, salo remains an essential part of Ukraine’s culinary heritage, representing the warmth and spirit of the Ukrainian people.</p>
+        </div>
+    </div>
+
+    <!-- Second Image -->
+    <div class="container">
+        <picture>
+            <source srcset="image/salo(lard)3.jpg" media="(max-width: 768px)">
+            <img src="image/salo(lard)3.jpg" alt="Image in the middle of text" style="max-width: 800px; width: 100%; height: auto;">
+        </picture>
+    </div>
+
+    <!-- Ingredients Section -->
+    <div class="ingredients-section">
+        <h2>Ingredients for Salo (Lard)</h2>
+        <ul class="ingredients-list">
+            <li>2 lb organic pasture pork belly</li>
+            <li>2 cups sea salt</li>
+            <li>few bay leaves and peppercorns</li>
+            <li>a handful of garlic cloves</li>
+            <li>2 tsp red pepper flakes</li>
+
+        </ul>
+    </div>
+
+    <!-- Preparation Section -->
+    <div class="preparation-section">
+        <h2>Preparation</h2>
+        <p>Place the pork belly on a cutting board and let it sit for at least an hour in room temperature.
+            Fill about an inch of glass container with salt and place bacon on top. Layer bay leaves, peppercorns, red pepper flakes and garlic on top and cover it fully with salt.
+            Leave it in the fridge for 3-4 days and it’s done!</p>
+
+    </div>
+
+    <!-- YouTube Video Embed Section -->
+<div class="youtube-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/yLNJXqtVSjQ" title="Salo Recipe Video" allowfullscreen></iframe>
+</div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Best Ukrainian Food. All rights reserved.</p>
+        <p>Contact: +41 79 706 14 20 | timjob48@gmail.com</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holodets</title>
+    <link rel="stylesheet" href="/main.css">
+    <!-- Link to Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Keyframes animation for menu and header */
+        @keyframes slideInFromTop {
+            0% {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Header Styles */
+        header {
+            position: relative;
+            text-align: center;
+            padding: 20px 0;
+            color: white;
+            font-size: 36px;
+            overflow: hidden;
+            animation: slideInFromTop 1s ease-out; /* Animation for header */
+            background-image: url('image/kholodets1.jpg'); /* Correct path for the background image */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        /* Navigation Menu */
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 10px;
+            position: relative;
+            z-index: 1;
+            animation: slideInFromTop 1s ease-out 0.5s forwards; /* Animation for navigation */
+        }
+
+        nav a {
+            color: white;
+            font-size: 18px;
+            opacity: 0;
+            animation: fadeIn 1s ease-out 1s forwards; /* Fade in effect for links */
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Banoch Section */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            color: white;
+            padding: 50px;
+            text-align: center;
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+        }
+
+        .about-info {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            max-width: 800px;
+            margin: 20px;
+        }
+
+        .about-info h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .about-info p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        .about-info img {
+            width: 100%;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        /* Ingredients Section */
+        .ingredients-section {
+            padding: 50px;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+
+        .ingredients-section h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .ingredients-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .ingredients-list li {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        /* Preparation Section */
+        .preparation-section {
+            padding: 50px;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .preparation-section h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .preparation-section p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        /* YouTube video container */
+        .youtube-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .youtube-container iframe {
+            max-width: 100%;
+            height: 450px;
+            border: none;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- New Header with Navigation -->
+    <div class="content">
+        <header>
+            <h1>Holodets</h1>
+            <!-- Navigation menu -->
+            <nav>
+                <a href="/">Home</a>
+                <a href="/recipes">Recipes</a>
+                <a href="/contact">Contact</a>
+                <a href="/about me">About Me</a>
+            </nav>
+        </header>
+    </div>
+
+    <!-- First Image -->
+    <div class="container">
+        <picture>
+            <source srcset="image/kholodets2.jpg" media="(max-width: 768px)">
+            <img src="image/kholodets2.jpg" alt="Image before text" style="max-width: 800px; width: 100%; height: auto;">
+        </picture>
+    </div>
+
+    <!-- Banoch Story Section -->
+    <div class="container">
+        <div class="about-info">
+            <h2>The History of Holodets</h2>
+            <p>The history of Ukrainian holodets (jellied meat) is a story of culinary tradition that embodies hospitality, heartiness, and rich flavors. Holodets is one of those dishes that has a long and enduring history, connected to practical needs as well as cultural and family traditions. This dish, popular in Ukraine and many other Eastern European countries, has evolved over the centuries and become a symbol of festive tables and family gatherings.</p>
+
+            <h2>The Origins of Holodets</h2>
+            <p>Holodets, as a dish, shares common roots with the cuisines of various nationalities, but the Ukrainian version of holodets is an integral part of the local gastronomic culture. The word "holodets" comes from the Old Slavic word "holodit," which refers to the method of preparation: meat or its broth is cooled, resulting in a jelly-like consistency.
+            The process of making holodets, like the recipe itself, developed over time. It is known that in Kievan Rus' and ancient Russia, dishes made from meat broths, which were then cooled to form jelly, were already being prepared. However, it was in the Ukrainian peasant kitchens that this dish became most widespread, as it was simple, filling, and made with readily available ingredients.</p>
+
+            <h2>Holodets in Ukrainian Cuisine</h2>
+            <p>Ukrainian holodets is traditionally made from pork, beef, chicken, or a combination of these meats. The meat is boiled slowly and then cooled, and thanks to the high gelatin content in the bones and connective tissue, it turns into a jelly-like consistency. The addition of garlic, onions, bay leaves, and spices gives holodets a rich flavor.
+            One of the distinguishing features of Ukrainian holodets is how it is served. It is typically cut into portioned pieces and served with horseradish or mustard, which adds a spicy and aromatic touch to the dish. Holodets is often part of festive feasts, weddings, anniversaries, and other important events, making it a key element of culinary culture.</p>
+            
+            <h2>Holodets in Traditions and Culture</h2>
+            <p>Holodets is not just food but also an important part of Ukrainian culture, symbolizing home comfort and family traditions. Over the centuries, holodets was a staple on the tables of both Ukrainian peasants and wealthy landowners. During holidays such as Christmas, Easter, or weddings, holodets always had a prominent place on the table.
+            An important aspect of holodets was its preparation, which often became an event in the family. In some regions of Ukraine, it was customary to prepare holodets in advance and place it in a cold spot (sometimes outside in the winter) to allow it to set and take on its jelly-like texture. This process was not only a culinary one but also a social occasion where family members would gather, discuss plans, and share cooking traditions.</p>
+
+            <h2>Holodets and Historical Events</h2>
+            <p>Ukrainian holodets was always an accessible and hearty dish for peasants, as it made use of cheaper and more readily available meat, while also leaving room to use the leftover broth and meat for other dishes. During times of famine and other difficult historical events, holodets became not only a filling food but also a symbol of survival and the resilience of the people.
+            In the Soviet Union, holodets remained a popular and beloved dish served at both festive and everyday tables. During this period, different republics of the Soviet Union developed their own versions of the dish, but the Ukrainian version of holodets always remained central, emphasizing the culture and traditions of Ukraine.</p>
+                            
+            <h2>Modern Variations and Traditions</h2>
+            <p>Today, holodets remains one of the most beloved dishes in Ukraine. While the traditions of its preparation and serving remain unchanged, there are many modern variations of the dish. For example, more refined versions may include a variety of ingredients such as vegetables, mushrooms, or even seafood. Despite these innovations, the classic recipe of holodets with meat and garlic remains the most beloved and popular in Ukrainian households.
+            Holodets is often prepared in large pots to feed a big family or group of guests. For festive occasions, it may be served in clear molds to highlight its jelly-like structure and beauty. In some regions of Ukraine, there are traditions of adding boiled eggs to the holodets and garnishing it with herbs and spices.</p>
+
+            <h2>Holodets as a Symbol of Hospitality</h2>
+            <p>Holodets is not just a dish, but also an important symbol of Ukrainian hospitality. When holodets appears on the table, it signifies the host's respect for their guests and invites them to share in joy and celebration. In Ukrainian culture, a feast with holodets is considered a special occasion where all family members, friends, and loved ones gather together.
+            This dish is always associated with good food and the warmth of family conversations, and the process of making it often becomes a ritual passed down from generation to generation.</p>
+
+            <h2>Conclusion</h2>
+            <p>Ukrainian holodets is not just a culinary dish, but also an important part of Ukrainian cultural and gastronomic identity. Its history is one of simplicity and sophistication, a symbol of hospitality and the resilience of the people. Today, holodets continues to delight Ukrainians at festive tables, preserving the traditions that go back centuries.</p>
+        </div>
+    </div>
+
+    <!-- Second Image -->
+    <div class="container">
+        <picture>
+            <source srcset="image/kholodets3.jpg" media="(max-width: 768px)">
+            <img src="image/kholodets3.jpg" alt="Image in the middle of text" style="max-width: 800px; width: 100%; height: auto;">
+        </picture>
+    </div>
+
+    <!-- Ingredients Section -->
+    <div class="ingredients-section">
+        <h2>Ingredients for Holodets</h2>
+        <ul class="ingredients-list">
+            <li>2 pigs feet</li>
+            <li>1 pig’s rear hock</li>
+            <li>2 lbs beef boneless beef chuck fat trimmed</li>
+            <li>2 lbs pork loin fat trimmed</li>
+            <li>2 large onions peeled</li>
+            <li>2 large carrots peeled</li>
+            <li>2 stalks celery rinsed</li>
+            <li>15 black peppercorns whole</li>
+            <li>2 bay leaves</li>
+            <li>1.5 Tbsp kosher salt</li>
+            <li>2 qts cold water (this amount is approximate, use more if needed)</li>
+            <li>1 bunch parsley washed under running water</li>
+            <li>6-8 cloves garlic peeled, minced</li>
+            <li>1 large beet *(or one 15oz can of canned beets, drained) cooked, peeled, finely grated</li>
+            <li>2 1/2 Tbsp white vinegar</li>
+            <li>2 1/2 Tbsp granulated sugar</li>
+            <li>1 1/4 tsp kosher salt (use less if using table salt)</li>
+            <li>6 Tbsp extra hot horseradish sauce (I use Beaver Brand) (Or, freshly grated horseradish root)</li>
+
+        </ul>
+    </div>
+
+    <!-- Preparation Section -->
+    <div class="preparation-section">
+        <h2>Preparation</h2>
+        <p>1st boil: To a large 8 qt pot add 2 pigs feet, 1 rear hock, 2 lbs pork loin, 2 lbs of boneless beef chuck, and add enough water to cover the meat. Bring to a boil and let simmer for 5 minutes. Next, remove the meat to a clean bowl. Discard the cooking liquid and wash the pot clean.
+        2nd boil: Add all the meat back to the pot, cover with fresh water and bring to a boil. Then, reduce the heat to a gentle simmer and cook for about 5 hours. All throughout cooking constantly skim the top from impurities with a slotted spoon. Do not cover with a lid.Tip: Preventing rapid boil and keeping the lid off while simmering will ensure that the broth comes out clear and not cloudy.
+        Keep an eye on the water level – add more if needed to keep the meat submerged at all times. If needed add a smaller-sized lid or dinner plate to the top of the meat to weigh the meat down and keep it under the water.
+        Add aromatics: Now add 2 onions, 2 carrots, 3 stalks celery, 15 black peppercorns, 2 bay leaves, and 1 ½ Tbsp of salt to the stock. Continue simmering for 1 more hour.
+        Remove solids: Remove all meat chunks from the broth to a large bowl. Remove and discard the remaining vegetables (onions, carrots, and bay leaves).
+        Line a large sieve with 3 layers of paper towels or several layers of cheesecloth and set it over a clean pot. Pour the broth through the paper towel lined sieve to remove impurities and fat.
+        Add parsley to the strained broth and simmer on low for 1-2 minutes. Remove the parsley and discard. Add 6-8 cloves minced garlic. Allow cooling completely.
+        Once the meat has cooled, discard the pig's feet, any bones, fat, or skin.
+        Shred the meat into bite-sized pieces and add to a 9"x12" baking dish in an even layer.
+        To make the meat aspic in individual portions, portion the meat between deep soup bowls or other small, but deep containers.
+        Cover & refrigerate until ready for next step.
+        While the meat is cooling, drain the cool broth: set a sieve lined with 2-3 layers of paper towels again over a large pot. Carefully drain the broth to remove any remaining solids, fat, or impurities. Change the paper towels as the broth stops flowing through – the fat creates a barrier and prevents the liquid from going through.
+        To get an absolutely fat-free broth, you might need to drain the broth through paper towels several times. Any fat left in the broth will cover the aspic in white patches as it solidifies if not removed at this stage. For best results, cool the broth to room temperature before using it in the next steps. Otherwise, pouring hot broth over the meat will melt the fat in the meat and make it float to the top.
+        Tip: The quickest way to cool the broth is to set the pot with the hot broth into a sink full of cold/icy water and stir it every so often until the broth cools.
+        Add half the broth to the meat: pour half of the cooled to room temperature broth over the meat. Skim any fat that floats to the top with a spoon. Refrigerate for about 45 minutes to slightly set. This will prevent the meat from floating to the top as you pour the other half of the broth. Keep the other half of the broth mixture at room temperature as the first half sets in the fridge.
+        Add the remainder of the broth: Once lightly set, remove the Holodets from the fridge and pour the remaining half of the broth over the top covering the meat completely. Add leaves of parsley for garnish if desired. Cover with plastic wrap and refrigerate until completely set, about 4-5 hours or overnight.
+        Once set, cut into 2×2 squares and serve alongside some beet & horseradish relish.
+        To make the beet & horseradish relish:
+        Shred the cooked beet on the zester side of the box greater. Let sit in a sieve for several minutes pressing out any extra liquid out. Transfer to a bowl
+        Combine 1 large cooked and finely grated on the zester side of the greater beet with
+        Combine the shredded and drained beets with 2 1/2 Tbsp vinegar, 2 1/2 Tbsp sugar and 1 1/4 tsp salt. Lastly, add 1/2 of the horseradish sauce (3 Tbsp) and stir everything to combine. Taste and continue adding the remainder of the horseradish sauce, a little at a time until desired spiciness level is reached. Keep in mind that as the relish sits in the fridge it will lose some of the spiciness.
+        </p>
+
+        <h2>Notes</h2>
+        <ul class="ingredients-list">
+           <p>TIPS:
+            You can use any other kind of meat instead of pork loin and the beef chuck, equal by weight to the one listed in the recipe. Do not replace the pig’s feet or the hock; they act as the gelling agent in the Holodets.</p>
+            <p>Instant Pot Holodets:
+                For this amount of ingredients an 8 Qt Instant pot is needed. You’re welcome to halve the recipe and use a 6 qt pressure cooker. 
+                Follow with the ingredients in the recipe (meats, aromatics & seasoning spices), but only add enough water to the pot to barely cover the meat. While cooking in the Instant Pot, the water does not evaporate like it does when cooked on the stovetop, so you do not need to add extra. 
+                Seal the lid and cook on low pressure for 3 hours. If your Instant pot does not cook for longer than 90 minutes at a time (like some do), then restart it when the time expires and continue doing so until a total of 3 hours is reached. 
+                Once the cooking time is complete, allow Natural Pressure Release (NPR), open the lid, skim the impurities that floated to the top, remove the meat carefully, and continue with the rest of the instructions on clarifying the broth and beyond. </p>
+
+        </ul>
+    </div>
+
+    <!-- YouTube Video Embed Section -->
+<div class="youtube-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/rG9AXljvUNM" title="Holodets Recipe Video" allowfullscreen></iframe>
+</div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Best Ukrainian Food. All rights reserved.</p>
+        <p>Contact: +41 79 706 14 20 | timjob48@gmail.com</p>
+    </footer>
+
+</body>
+</html>

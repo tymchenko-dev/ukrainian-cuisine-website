@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kruchenyky</title>
+    <link rel="stylesheet" href="/main.css">
+    <!-- Link to Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Keyframes animation for menu and header */
+        @keyframes slideInFromTop {
+            0% {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Header Styles */
+        header {
+            position: relative;
+            text-align: center;
+            padding: 20px 0;
+            color: white;
+            font-size: 36px;
+            overflow: hidden;
+            animation: slideInFromTop 1s ease-out; /* Animation for header */
+            background-image: url('image/kruchenyky1.jpg'); /* Correct path for the background image */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        /* Navigation Menu */
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 10px;
+            position: relative;
+            z-index: 1;
+            animation: slideInFromTop 1s ease-out 0.5s forwards; /* Animation for navigation */
+        }
+
+        nav a {
+            color: white;
+            font-size: 18px;
+            opacity: 0;
+            animation: fadeIn 1s ease-out 1s forwards; /* Fade in effect for links */
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Banoch Section */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            color: white;
+            padding: 50px;
+            text-align: center;
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+        }
+
+        .about-info {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            max-width: 800px;
+            margin: 20px;
+        }
+
+        .about-info h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .about-info p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        .about-info img {
+            width: 100%;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        /* Ingredients Section */
+        .ingredients-section {
+            padding: 50px;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+
+        .ingredients-section h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .ingredients-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .ingredients-list li {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        /* Preparation Section */
+        .preparation-section {
+            padding: 50px;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .preparation-section h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .preparation-section p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        /* YouTube video container */
+        .youtube-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .youtube-container iframe {
+            max-width: 100%;
+            height: 450px;
+            border: none;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- New Header with Navigation -->
+    <div class="content">
+        <header>
+            <h1>Kruchenyky</h1>
+            <!-- Navigation menu -->
+            <nav>
+                <a href="/">Home</a>
+                <a href="/recipes">Recipes</a>
+                <a href="/contact">Contact</a>
+                <a href="/about me">About Me</a>
+            </nav>
+        </header>
+    </div>
+
+    <!-- First Image -->
+    <div class="container">
+        <picture>
+            <source srcset="image/kruchenyky2.jpg" media="(max-width: 768px)">
+            <img src="image/kruchenyky2.jpg" alt="Image before text" style="max-width: 800px; width: 100%; height: auto;">
+        </picture>
+    </div>
+
+    <!-- Banoch Story Section -->
+    <div class="container">
+        <div class="about-info">
+            <h2>The History of Kruchenyky</h2>
+            <p>Kruchenyky are one of Ukraine’s traditional dishes with a rich and fascinating history. They are not only a culinary creation but also an essential part of folk customs and gastronomic culture that dates back to ancient times.</p>
+
+            <h2>The Origins of Kruchenyky</h2>
+            <p>The name "kruchenyky" comes from the Ukrainian word "kruchyty," meaning "to twist" or "to roll." This refers to the way the dish is traditionally made—meat or vegetables are rolled up inside a piece of dough. Kruchenyky were historically prepared for significant holidays and celebrations, and they have deep roots in Ukrainian culinary traditions, especially in rural households.
+            One theory suggests that kruchenyky originated in the times of Kievan Rus, when the custom of rolling meat or other fillings into dough began. These early versions were likely influenced by ancient culinary practices, where wrapping food in dough helped preserve it and made it more portable. Over time, kruchenyky became an integral part of festive meals and family celebrations, particularly during Easter, Christmas, and weddings.</p>
+
+            <h2>Ingredients and Features</h2>
+            <p>Kruchenyky are typically made by wrapping a filling (often meat, such as pork or chicken, sometimes with vegetables or mushrooms) inside thin layers of dough. The dough is usually made from simple ingredients like flour, water, and salt, though it can sometimes include sour cream or eggs for a softer, richer texture. The dish can be baked in the oven or fried on a skillet, with the rolled-up parcels creating a satisfying crisp outer layer and a tender, flavorful filling inside.
+            What distinguishes kruchenyky from other similar dishes is their versatility. The fillings can vary widely depending on regional tastes, available ingredients, and personal preferences. In some areas, kruchenyky might be filled with finely chopped onions and mushrooms, while in others, meat fillings can be combined with sweet components like apples or dried fruits, creating a unique balance of savory and sweet.</p>
+            
+            <h2>Kruchenyky and Ukrainian Traditions</h2>
+            <p>Kruchenyky are closely tied to Ukrainian festive traditions, particularly during major religious holidays like Easter and Christmas. They were often prepared for large family gatherings or feasts, where the emphasis was on sharing and celebrating the harvest. In rural Ukraine, kruchenyky were a sign of hospitality, and preparing them was a way to show respect for guests.
+            In some regions, kruchenyky were also prepared for the feast of St. Andrew (December 13), which marked the beginning of the winter holiday season. This holiday, steeped in both Christian and pagan traditions, was a time for gathering and enjoying hearty, comforting foods, with kruchenyky being one of the favored dishes on the table.</p>
+
+            <h2>Development and Popularization</h2>
+            <p>Over time, kruchenyky evolved into a more versatile dish. While they started as a holiday or celebratory food, they eventually found their way into everyday meals as well. Ukrainian families began to experiment with different fillings, from mushrooms and cabbage to more luxurious options, like pork or beef, mixed with vegetables.
+            During the Soviet era, traditional Ukrainian dishes like kruchenyky became less common in everyday cuisine, as many local culinary practices were overshadowed by standardized Soviet recipes. However, in recent decades, there has been a revival of interest in traditional Ukrainian foods, and kruchenyky have regained their place on festive tables, as well as in modern Ukrainian restaurants, where chefs continue to experiment with new fillings and preparations.</p>
+                            
+            <h2>Modern Significance</h2>
+            <p>Today, kruchenyky are still an important part of Ukrainian culinary culture. They are often prepared during family gatherings, festive events, and national holidays like Independence Day or Christmas. They are also served in many Ukrainian restaurants, where chefs continue to explore creative versions of the traditional dish. The beauty of kruchenyky lies in their flexibility; they can be made with a variety of fillings and cooking techniques, making them a popular choice for home cooks and professional chefs alike.
+            Kruchenyky are also a symbol of Ukrainian hospitality and warmth. The process of preparing them, often involving the whole family, continues to be a bonding experience for many households, as it reflects a deep connection to Ukrainian traditions of sharing food and stories.</p>
+
+            <h2>Conclusion</h2>
+            <p>Kruchenyky are more than just a traditional Ukrainian dish; they are a living symbol of Ukraine’s culinary heritage, showcasing the rich history, cultural values, and agricultural traditions of the country. Combining simplicity and sophistication, kruchenyky remain a beloved part of Ukrainian cuisine, enjoyed by people of all generations. Whether made with meat, vegetables, or sweet fillings, kruchenyky continue to represent the heart and soul of Ukrainian hospitality.</p>
+        </div>
+    </div>
+
+    <!-- Second Image -->
+    <div class="container">
+        <picture>
+            <source srcset="image/Kruchenyky3.jpg" media="(max-width: 768px)">
+            <img src="image/kruchenyky3.jpg" alt="Image in the middle of text" style="max-width: 800px; width: 100%; height: auto;">
+        </picture>
+    </div>
+
+    <!-- Ingredients Section -->
+    <div class="ingredients-section">
+        <h2>Ingredients for Kruchenyky</h2>
+        <ul class="ingredients-list">
+            <li>8 slices pork, 2 lbs total; e.g. from pork loin, pork tenderloin, or pork shoulder</li>
+            <li>2 tablespoons olive oil</li>
+            <li>2 cups mushrooms, chopped</li>
+            <li>1 cup onion, chopped</li>
+            <li>2 tablespoons sour cream</li>
+            <li>3 cups chicken broth, approximately</li>
+            <li>1/2 teaspoon salt, more to taste (for filling and meat)</li>
+            <ti>1/2 teaspoon black pepper, more to taste (for filling and meat)</ti>
+
+        </ul>
+    </div>
+
+    <!-- Preparation Section -->
+    <div class="preparation-section">
+        <h2>Preparation</h2>
+        <p>Preheat the oven to 360 degrees Fahrenheit. Meanwhile, place a slice of pork on a cutting board between two layers of plastic wrap. Gently pound with a meat mallet to flatten. Repeat with the remaining slices of pork.
+            8 slices pork
+            Prepare the filling. In a frying pan, sauté the chopped mushrooms and onion in olive oil over medium heat for 7-8 minutes, stirring occasionally. Add salt and pepper to taste.
+            2 cups mushrooms, 1 cup onion, 2 tablespoons olive oil
+            Transfer the fried mushrooms to a bowl, add sour cream and mix.
+            2 tablespoons sour cream
+            Place a piece of pork on a plate, salt and pepper the meat to taste. Then place about 2 tablespoons of the filling on one edge.
+            Gently roll the pork slices around the filling, forming a thin roll (kruchenik). Secure the edge with a toothpick or wooden skewer.
+            In a frying pan over medium heat, fry the rolls on both sides, about 4 minutes on each side.
+            Place the fried kruchenyky in a baking dish and pour over the broth. They should be almost completely covered, so the amount of broth may vary.
+            3 cups chicken broth
+            Bake in the oven for 30 minutes or until the meat rolls are tender. When done, remove from oven and allow to cool slightly.
+            Serve the kruchenyky with side dishes and condiments of choice.</p>
+
+        <h2>Notes</h2>
+        <ul class="ingredients-list">
+            <li>Kruchenyky are often served with side dishes such as pasta, mashed potatoes, rice, or buckwheat. Sometimes they are also served with fresh vegetables and salad.</li>
+            <li>Different sauces/condiments such as tomato (ketchup), mustard, horseradish sauce, and any other preferred sauces can be served with it.</li>
+            <li>To make the rolls tender, try to pound the pork thin without tearing it.</li>
+            <li>Instead of chicken broth, you can also use beef or vegetable broth. Tomato sauce works well too.</li>
+            <li>Pickles, bacon, vegetables (carrots), and garlic can also be wrapped in meat rolls so you can experiment with the filling.</li>
+            <li>You can use any mushrooms. They can be fresh or frozen.</li>
+
+        </ul>
+    </div>
+
+    <!-- YouTube Video Embed Section -->
+<div class="youtube-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/xo3pm3texsg" title="Kruchenyky Recipe Video" allowfullscreen></iframe>
+</div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Best Ukrainian Food. All rights reserved.</p>
+        <p>Contact: +41 79 706 14 20 | timjob48@gmail.com</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="/main.css">
+    <!-- Link to Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', serif;
+            background-image: url('about me.jpg'); /* Background image for the whole site */
+            background-size: cover;
+            background-position: center;
+            background-color: #f5f5f5;
+            background-attachment: fixed;
+            color: #333;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Keyframes animation for menu and header */
+        @keyframes slideInFromTop {
+            0% {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Header Styles */
+        header {
+            position: relative;
+            text-align: center;
+            padding: 20px 0;
+            color: white;
+            font-size: 36px;
+            overflow: hidden;
+            animation: slideInFromTop 1s ease-out; /* Animation for header */
+        }
+
+        /* Video as background in the header */
+        header video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1; /* Video stays in the background */
+        }
+
+        /* Navigation Menu */
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 10px;
+            position: relative;
+            z-index: 1;
+            animation: slideInFromTop 1s ease-out 0.5s forwards; /* Animation for navigation */
+        }
+
+        nav a {
+            color: white;
+            font-size: 18px;
+            opacity: 0;
+            animation: fadeIn 1s ease-out 1s forwards; /* Fade in effect for links */
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* About Me Section */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            background-image: url('background-about.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            padding: 50px;
+            text-align: center;
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+        }
+
+        .about-info {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            max-width: 800px;
+            margin: 20px;
+        }
+
+        .about-info h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .about-info p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        .about-info img {
+            width: 100%;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- New Header with Navigation -->
+    <div class="content">
+        <header>
+            <!-- Video as background in header -->
+            <video autoplay loop muted>
+                <source src="about me.mp4" type="video/mp4">
+                Your browser does not support video.
+            </video>
+            <h1>About Me</h1>
+            <!-- Navigation menu -->
+            <nav>
+                <a href="/">Home</a>
+                <a href="/recipes">Recipes</a>
+                <a href="/contact">Contact</a>
+                <a href="/about me">About Me</a>
+            </nav>
+        </header>
+    </div>
+
+    <!-- About Me Section -->
+    <div class="container">
+        <div class="about-info">
+            <!-- Image before text -->
+            <img src="img1.jpg" alt="Image before text">
+
+            <h2>From the Kitchen to the World of Technology: A Journey Shaped by Change and Passion for Ukrainian Cuisine</h2>
+            <p>My name is Vladyslav, and I am 26 years old. My journey has been full of unexpected turns, from working in kitchens across Europe to pursuing a new career in technology, but one thing has remained constant: my love for Ukrainian cuisine. I believe Ukrainian food is the most delicious in the world—rich in history, flavor, and culture—and it has always been a central part of my life.</p>
+
+            <p>For 8 years, I worked as a cook, baker, and pastry, mastering the art of cooking. Growing up in Ukraine, I was surrounded by the amazing flavors of traditional Ukrainian dishes like borscht, varenyky (dumplings), holubtsi (stuffed cabbage rolls), and of course, the rich, hearty bread that forms the heart of our meals. Ukrainian food is about more than just taste—it’s about family, tradition, and a deep connection to the land. Every dish tells a story, and I took great pride in sharing this culinary heritage with others.</p>
+
+            <!-- Image in the middle of the text -->
+            <img src="img2.jpg" alt="Image in the middle of text">
+
+            <p>I had the privilege of working in various European countries, including Slovakia, Lithuania, and Croatia, where I learned about different cuisines and culinary traditions. Yet, no matter where I went, I always believed that Ukrainian food was the best. There’s something special about its simplicity, its bold flavors, and the way it brings people together around the table.</p>
+
+            <p>However, life changed dramatically for me when the war in Ukraine forced me to leave my home country. Like so many others, I had no choice but to seek safety elsewhere. I moved to Switzerland, a country where I began rebuilding my life. While adapting to a new environment was a challenge, it also gave me the opportunity to explore new possibilities. I realized that the kitchen, while a place of joy for me, was no longer where I wanted to build my future.</p>
+
+            <p>Driven by curiosity and a desire for growth, I decided to pursue a career in programming. I completed a course in software testing and explored web development, diving into CSS, JavaScript, and HTML. The world of technology intrigued me, and I saw it as a new challenge, one that would allow me to create and innovate in ways I hadn’t before. Currently, I am studying computer science through HarvardX’s CS50, expanding my knowledge and skills. My long-term dream is to work in artificial intelligence or cybersecurity, where I can contribute to creating solutions that make a difference.</p>
+
+            <p>Though my career has shifted from the kitchen to coding, the skills I developed as a chef—creativity, precision, problem-solving—continue to serve me well. Just like in cooking, where every ingredient counts and every step is important, in programming, every line of code must be crafted with care and attention.</p>
+
+            <p>The war took me far from home, but it also allowed me to grow, explore new possibilities, and discover a passion for technology. Yet, no matter where I go or what I do, I will always believe that Ukrainian cuisine is the most delicious in the world. Its flavors, its warmth, and the memories it holds will always be a part of me. And while I may no longer be cooking in kitchens, I carry my love for Ukrainian food with me, knowing that, just like coding, it’s something that can bring people together and make the world a richer, more meaningful place.</p>
+
+            <!-- Image at the end of the text -->
+            <img src="img3.jpg" alt="Image at the end of text">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Best Ukrainian Food. All rights reserved.</p>
+        <p>Contact: +41 79 706 14 20 | timjob48@gmail.com</p>
+    </footer>
+
+</body>
+</html>

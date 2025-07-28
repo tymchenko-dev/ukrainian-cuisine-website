@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deruny</title>
+    <link rel="stylesheet" href="/main.css">
+    <!-- Link to Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Keyframes animation for menu and header */
+        @keyframes slideInFromTop {
+            0% {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Header Styles */
+        header {
+            position: relative;
+            text-align: center;
+            padding: 20px 0;
+            color: white;
+            font-size: 36px;
+            overflow: hidden;
+            animation: slideInFromTop 1s ease-out; /* Animation for header */
+            background-image: url('image/deruny1.jpg'); /* Correct path for the background image */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        /* Navigation Menu */
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 10px;
+            position: relative;
+            z-index: 1;
+            animation: slideInFromTop 1s ease-out 0.5s forwards; /* Animation for navigation */
+        }
+
+        nav a {
+            color: white;
+            font-size: 18px;
+            opacity: 0;
+            animation: fadeIn 1s ease-out 1s forwards; /* Fade in effect for links */
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Banoch Section */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            color: white;
+            padding: 50px;
+            text-align: center;
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+        }
+
+        .about-info {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            max-width: 800px;
+            margin: 20px;
+        }
+
+        .about-info h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .about-info p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        .about-info img {
+            width: 100%;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        /* Ingredients Section */
+        .ingredients-section {
+            padding: 50px;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+
+        .ingredients-section h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .ingredients-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .ingredients-list li {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        /* Preparation Section */
+        .preparation-section {
+            padding: 50px;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .preparation-section h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .preparation-section p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        /* YouTube video container */
+        .youtube-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .youtube-container iframe {
+            max-width: 100%;
+            height: 450px;
+            border: none;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- New Header with Navigation -->
+    <div class="content">
+        <header>
+            <h1>Deruny</h1>
+            <!-- Navigation menu -->
+            <nav>
+                <a href="/">Home</a>
+                <a href="/recipes">Recipes</a>
+                <a href="/contact">Contact</a>
+                <a href="/about me">About Me</a>
+            </nav>
+        </header>
+    </div>
+
+    <!-- First Image -->
+    <div class="container">
+        <picture>
+            <source srcset="image/deruny2.jpg" media="(max-width: 768px)">
+            <img src="image/deruny2.jpg" alt="Image before text" style="max-width: 800px; width: 100%; height: auto;">
+        </picture>
+    </div>
+
+    <!-- Banoch Story Section -->
+    <div class="container">
+        <div class="about-info">
+            <h2>The History of Deruny</h2>
+            <p>The history of Ukrainian deruny (potato pancakes) is a story of simplicity, flavor, and folk wisdom, encapsulated in a dish that has long been an integral part of Ukrainian cuisine. Deruny are traditional pancakes made from grated potatoes, fried until golden brown. While this dish is familiar not only in Ukraine but also in other Eastern European countries, it became particularly popular in Ukraine, where it became a symbol of home cooking.</p>
+
+            <h2>The Origins of Deruny</h2>
+            <p>Deruny, like many other dishes, have ancient roots. The word "derun" comes from an Old Slavic term referring to potatoes or something related to root vegetables. Given that potatoes were introduced to Europe from the Americas only in the late 16th century, it is likely that the first versions of deruny were made using other root vegetables like turnips or parsnips.
+            With the arrival of potatoes in Ukraine in the 18th-19th centuries, the vegetable became widely used in cooking, and it is with potatoes that deruny became the dish we know today. The timing of their emergence can be linked to the period when potatoes became an accessible and widespread product in peasant kitchens, offering a cheap, hearty, and nutritious meal.</p>
+
+            <h2>Deruny as a Folk Dish</h2>
+            <p>Deruny are one of those dishes that perfectly suited peasant cuisine. Potatoes were an affordable and readily available product that allowed for quick, filling, and tasty meals, perfect for feeding an entire family. Deruny could be made year-round using fresh potatoes, and they could serve as either a snack or a main dish, depending on the situation.
+            At the core of deruny is grated potato, usually mixed with onions, eggs, flour, and spices, and then fried in a pan until crispy and golden. Some recipes also include mushrooms, meat, or additional seasonings to enhance the flavor. Traditionally, deruny are served with various sauces such as sour cream, garlic sauce, or even sauerkraut.</p>
+            
+            <h2>Regional Variations</h2>
+            <p>Deruny are a dish that varies by region in Ukraine. In some areas, they are made with garlic or herbs, while in others, they are filled with meat or mushrooms. In the Carpathians, for example, deruny might include meat filling, while in Chernihiv and Poltava, they are often made with a lot of onions and served with sour cream. In some parts of Ukraine, deruny are even served at festive occasions, such as weddings or family celebrations.
+            What makes deruny special is their versatility. They can be a regular part of daily meals or a dish for special occasions, as they are easy to prepare, and the flavor is always hearty and satisfying.</p>
+
+            <h2>Deruny in Historical Context</h2>
+            <p>As a peasant dish, deruny became an important part of Ukrainian gastronomic tradition. In the 19th century, when Ukraine was part of the Russian Empire, potatoes were already being actively used by all social classes. However, it was in peasant kitchens where deruny remained one of the most popular and affordable dishes.
+            During times of famine and hardship, such as the Holodomor and other crises, deruny became one of the few dishes that could be made using readily available and inexpensive ingredients — potatoes, onions, and eggs. They symbolized simplicity and resilience, representing the Ukrainian people's ability to endure difficult times.
+            In the Soviet Union, deruny continued to be a popular dish, often featured in family meals where traditional home-cooked food was valued. In the post-Soviet period, with Ukraine's independence, deruny regained their status as a national dish, reflecting a deep connection to folk traditions.</p>
+                            
+            <h2>Deruny as a Symbol of Ukrainian Cuisine</h2>
+            <p>Deruny are more than just a popular dish; they are an important element of Ukrainian culinary culture. They symbolize the folk wisdom of cooking with simple, accessible ingredients to create hearty and satisfying meals. Like many traditional dishes, the recipe for deruny has been passed down through generations, preserving its identity and relevance.
+            Today, deruny continue to be a beloved dish for Ukrainians, representing family traditions, hospitality, and a love for their cultural heritage. This dish, which never goes out of style, will continue to be a part of Ukrainian cuisine for many years to come.</p>
+
+            <h2>Conclusion</h2>
+            <p>Ukrainian deruny are not just a dish; they are a symbol of Ukrainian folk cuisine, simplicity, and hospitality. They remain relevant and popular, reflecting the spirit of Ukrainian tradition, heartiness, and warmth. With every bite of deruny, we not only enjoy their delicious taste but also connect to the history behind this cherished dish.</p>
+        </div>
+    </div>
+
+    <!-- Second Image -->
+    <div class="container">
+        <picture>
+            <source srcset="image/deruny3.jpg" media="(max-width: 768px)">
+            <img src="image/deruny3.jpg" alt="Image in the middle of text" style="max-width: 800px; width: 100%; height: auto;">
+        </picture>
+    </div>
+
+    <!-- Ingredients Section -->
+    <div class="ingredients-section">
+        <h2>Ingredients for Deruny</h2>
+        <ul class="ingredients-list">
+            <li>5 medium-sized potatoes</li>
+            <li>4 tablespoons all-purpose flour</li>
+            <li>1 egg</li>
+            <li>1/3 teaspoon salt, more to taste</li>
+            <li>1/3 teaspoon black pepper, more to taste</li>
+            <li>3 tablespoons olive oil, for frying (might need more)</li>
+            <li>2 tablespoons sour cream, for serving (optional)</li>
+
+        </ul>
+    </div>
+
+    <!-- Preparation Section -->
+    <div class="preparation-section">
+        <h2>Preparation</h2>
+        <p>Peel the potatoes, then wash and dry them. Then grate the potatoes and put them in a bowl. Try to squeeze out as much potato juice as possible. It's best to do this by hand.
+            5 medium-sized potatoes
+            Add the flour, egg, salt and pepper to the bowl.
+            4 tablespoons all-purpose flour, 1 egg, 1/3 teaspoon salt, 1/3 teaspoon black pepper
+            Mix everything thoroughly. During mixing, more potato juice might separate which will need to be drained. The potato mass will begin to darken quickly in the air – this is the result of oxidation and is normal. Just make sure to work quickly.
+            Heat a bit of olive oil in a frying pan. Spoon small neat portions of potatoes and fry on medium heat for 4 minutes on one side.
+            Flip the deryny over with a spatula and cover the pan with a lid. Fry for another three minutes until fully cooked through and golden brown on both sides. Repeat the frying process until you have used up all of the potato mixture – add more oil to the pan as needed.
+            Place the finished deruny on a plate and serve with sour cream. Enjoy!
+            2 tablespoons sour cream</p>
+
+        <h2>Notes</h2>
+        <ul class="ingredients-list">
+            <li>You can use any kind of potato, but if you need a recommendation, try using Russet potatoes, Yukon Gold potatoes, white potatoes or Idaho potatoes.</li>
+            <li>Instead of grating the potatoes by hand, you can also use the food processor to shred the potatoes – just don’t overdo it.</li>
+            <li>Do not prepare the potato mass in advance since it will change color due to oxidation.</li>
+            <li>If you fry the deruny in a lot of oil, place them on a plate with a paper towel or napkin after frying so that the excess oil can be absorbed.</li>
+            <li>Enjoy the deruny warm out of the pan when they are crispy.</li>
+
+        </ul>
+    </div>
+
+    <!-- YouTube Video Embed Section -->
+<div class="youtube-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Pmq4gDmAfNg" title="Deruny Recipe Video" allowfullscreen></iframe>
+</div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Best Ukrainian Food. All rights reserved.</p>
+        <p>Contact: +41 79 706 14 20 | timjob48@gmail.com</p>
+    </footer>
+
+</body>
+</html>

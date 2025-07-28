@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pampushki</title>
+    <link rel="stylesheet" href="/main.css">
+    <!-- Link to Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Keyframes animation for menu and header */
+        @keyframes slideInFromTop {
+            0% {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Header Styles */
+        header {
+            position: relative;
+            text-align: center;
+            padding: 20px 0;
+            color: white;
+            font-size: 36px;
+            overflow: hidden;
+            animation: slideInFromTop 1s ease-out; /* Animation for header */
+            background-image: url('image/pampushki1.jpg'); /* Correct path for the background image */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        /* Navigation Menu */
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 10px;
+            position: relative;
+            z-index: 1;
+            animation: slideInFromTop 1s ease-out 0.5s forwards; /* Animation for navigation */
+        }
+
+        nav a {
+            color: white;
+            font-size: 18px;
+            opacity: 0;
+            animation: fadeIn 1s ease-out 1s forwards; /* Fade in effect for links */
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Banoch Section */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            color: white;
+            padding: 50px;
+            text-align: center;
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+        }
+
+        .about-info {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            max-width: 800px;
+            margin: 20px;
+        }
+
+        .about-info h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .about-info p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        .about-info img {
+            width: 100%;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        /* Ingredients Section */
+        .ingredients-section {
+            padding: 50px;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+
+        .ingredients-section h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .ingredients-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .ingredients-list li {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        /* Preparation Section */
+        .preparation-section {
+            padding: 50px;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .preparation-section h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .preparation-section p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        /* YouTube video container */
+        .youtube-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .youtube-container iframe {
+            max-width: 100%;
+            height: 450px;
+            border: none;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- New Header with Navigation -->
+    <div class="content">
+        <header>
+            <h1>Pampushki</h1>
+            <!-- Navigation menu -->
+            <nav>
+                <a href="/">Home</a>
+                <a href="/recipes">Recipes</a>
+                <a href="/contact">Contact</a>
+                <a href="/about me">About Me</a>
+            </nav>
+        </header>
+    </div>
+
+    <!-- First Image -->
+    <div class="container">
+        <picture>
+            <source srcset="image/pampushki2.jpg" media="(max-width: 768px)">
+            <img src="image/pampushki2.jpg" alt="Image before text" style="max-width: 800px; width: 100%; height: auto;">
+        </picture>
+    </div>
+
+    <!-- Banoch Story Section -->
+    <div class="container">
+        <div class="about-info">
+            <h2>The History of Pampushki</h2>
+            <p>The history of Ukrainian pampushki (garlic buns) is one of warmth, simplicity, and tradition. These fluffy, yeast-based buns, often brushed with aromatic garlic oil, have become a cherished part of Ukrainian cuisine. Pampushki are typically served alongside hearty soups like borscht but are also enjoyed on their own as a snack or side dish. They are more than just food—they symbolize hospitality, comfort, and a deep connection to Ukrainian culinary heritage.</p>
+
+            <h2>The Origins of Pampushki</h2>
+            <p>The exact origins of pampushki remain unclear, but like many traditional dishes, they have deep roots in folk cuisine. The name "pampushka" is thought to have originated from the Polish word pączek, meaning a small, round pastry. However, the Ukrainian version of pampushki evolved to become distinct, shaped by local ingredients and tastes.
+            The dish likely emerged in Ukrainian villages, where ingredients like flour, yeast, and garlic were readily available. With wheat and other grains being staples in the Ukrainian diet, the tradition of baking soft, pillowy buns became widespread. Although pampushki were influenced by neighboring cultures, they developed their own unique characteristics over time—particularly the garlic butter glaze that has become a hallmark of the dish.</p>
+
+            <h2>Pampushki as a Folk Dish</h2>
+            <p>Pampushki are an embodiment of Ukrainian folk wisdom. They represent the resourcefulness of peasant kitchens, where food was often made from simple ingredients that were affordable and easy to grow. The basic dough for pampushki is made with flour, yeast, water, salt, and sugar. The dough is kneaded, left to rise, then shaped into small, round buns and baked until golden brown.
+            The real magic of pampushki lies in their finishing touch: a generous brushing of garlic-infused oil, sometimes with added herbs like dill. This simple yet flavorful addition gives the buns a savory kick, making them an ideal companion to the rich, often tangy taste of borscht. Whether served at a family gathering or a festive occasion, pampushki bring people together around the table, offering warmth and satisfaction with every bite.</p>
+            
+            <h2>Regional Variations</h2>
+            <p>Like many traditional Ukrainian dishes, pampushki vary from region to region. In some areas, the dough might include extra ingredients like onions or herbs for additional flavor. In other regions, pampushki might be stuffed with sweet fillings such as jam or fruit, offering a delightful contrast to the savory versions. The most common style, however, remains the classic garlic-glazed bun, which can be found in nearly every corner of Ukraine.
+            In the Carpathian Mountains, for example, pampushki are sometimes enriched with sour cream or butter, resulting in a richer texture and taste. Meanwhile, in central Ukraine, the garlic oil is often the star, with little to no additional seasonings. Regardless of the region, pampushki are always made with love, and their preparation often reflects local customs and traditions.</p>
+
+            <h2>Pampushki in Historical Context</h2>
+            <p>Pampushki have long been a symbol of Ukrainian resilience and resourcefulness. During times of hardship, such as wars or famines, these simple buns became a beloved dish that could be made with minimal ingredients. They were a comforting, filling food that could stretch a modest meal, providing nourishment during difficult times.
+            Historically, pampushki were often seen at major celebrations and holidays. The act of baking and sharing them with family and friends has always been an expression of generosity and hospitality. They were particularly popular at large family gatherings or special occasions like weddings, holidays, and festivals, where the aroma of freshly baked pampushki would fill the house, drawing everyone to the table.</p>
+                            
+            <h2>Pampushki as a Symbol of Ukrainian Hospitality</h2>
+            <p>Pampushki are more than just a food—they are a representation of Ukrainian hospitality and the deep cultural connection to home-cooked meals. In Ukrainian tradition, sharing a meal is a sign of welcome, and pampushki are often offered to guests as a gesture of warmth and kindness. Whether served with soup or enjoyed on their own, they convey a sense of comfort and homeliness that transcends mere nourishment.
+            For many Ukrainians, making pampushki is a cherished family tradition. Recipes are passed down through generations, with each family putting their own twist on the dish. This passing down of knowledge not only preserves the dish itself but also strengthens bonds between family members, keeping Ukrainian culinary traditions alive.</p>
+
+            <h2>Conclusion</h2>
+            <p>Ukrainian pampushki are not just a dish; they are a symbol of tradition, warmth, and the spirit of Ukrainian hospitality. Simple yet delicious, these garlic buns have been passed down through generations, continuing to be a beloved part of Ukrainian cuisine. Whether served as a side dish, a snack, or a festive treat, pampushki remain a timeless and comforting staple in Ukrainian households, representing the deep cultural roots and enduring spirit of the Ukrainian people.</p>
+        </div>
+    </div>
+
+    <!-- Second Image -->
+    <div class="container">
+        <picture>
+            <source srcset="image/pampushki3.jpg" media="(max-width: 768px)">
+            <img src="image/pampushki3.jpg" alt="Image in the middle of text" style="max-width: 800px; width: 100%; height: auto;">
+        </picture>
+    </div>
+
+    <!-- Ingredients Section -->
+    <div class="ingredients-section">
+        <h2>Ingredients for Pampushki</h2>
+        <ul class="ingredients-list">
+            <li>1 1/2 cups all-purpose flour</li>
+            <li>1/2 cup milk, warm</li>
+            <li>2 ounces butter, softened</li>
+            <li>1 teaspoon instant dry yeast</li>
+            <li>1 teaspoon granulated sugar</li>
+            <li>1/4 teaspoon salt</li>
+            <li>milk or egg yolk, for brushing</li>
+            <li>3 garlic cloves, minced</li>
+            <li>3-4 sprigs dill, chopped</li>
+            <li>3 tablespoons olive oil</li>
+
+        </ul>
+    </div>
+
+    <!-- Preparation Section -->
+    <div class="preparation-section">
+        <h2>Preparation</h2>
+        <p>In a large bowl, whisk together the dry ingredients.
+            1 1/2 cups all-purpose flour, 1 teaspoon instant dry yeast, 1 teaspoon granulated sugar, 1/4 teaspoon salt
+            Add the warm milk (98-100°F) and the soft butter.
+            1/2 cup milk, 2 ounces butter
+            Knead the mixture into a soft dough that doesn't stick to your hands. If needed, add more flour gradually.
+            Cover the bowl with cling film and let the dough rise in a warm place for 40-50 minutes, or until it doubled or tripled in size.
+            Punch down the dough and divide it into 6 equal portions. Shape them into small round rolls and place them in a baking dish, leaving some space between them. Cover with cling film and let them rise again for another 30 minutes in a warm place. Towards the end, preheat the oven to 360 degrees Fahrenheit.
+            Brush the tops of the buns with milk (alternatively egg yolk or sugar water) to give them a golden crust during baking. Bake for 20-25 minutes, or until golden brown and cooked through.
+            milk or egg yolk
+            Remove the finished buns from the oven. Whisk together the olive oil, chopped dill, and minced garlic in a small bowl. Brush the hot buns generously with the oil and let them cool slightly before serving.
+            3 garlic cloves, 3-4 sprigs dill, 3 tablespoons olive oil</p>
+
+        <h2>Notes</h2>
+        <ul class="ingredients-list">
+            <li>Make sure the instant dry yeast you’re using hasn’t expired and the milk is warm (not hot) so as not to harm the yeast.</li>
+            <li>Knead the dough well until it is smooth and elastic for the best texture.</li>
+            <li>The resting time may vary depending on the temperature in your home.</li>
+            <li>Divide the dough into evenly-sized pieces to ensure even baking.</li>
+            <li>Don’t overbake the rolls, as this can dry them out.</li>
+            <li>Pampushky taste best when they are fresh and still warm. They are often served with borscht.</li>
+
+        </ul>
+    </div>
+
+    <!-- YouTube Video Embed Section -->
+<div class="youtube-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/4I5DcCgnaGU" title="Pampushki Recipe Video" allowfullscreen></iframe>
+</div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Best Ukrainian Food. All rights reserved.</p>
+        <p>Contact: +41 79 706 14 20 | timjob48@gmail.com</p>
+    </footer>
+
+</body>
+</html>

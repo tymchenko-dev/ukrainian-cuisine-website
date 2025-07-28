@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapustnyak</title>
+    <link rel="stylesheet" href="/main.css">
+    <!-- Link to Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Keyframes animation for menu and header */
+        @keyframes slideInFromTop {
+            0% {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Header Styles */
+        header {
+            position: relative;
+            text-align: center;
+            padding: 20px 0;
+            color: white;
+            font-size: 36px;
+            overflow: hidden;
+            animation: slideInFromTop 1s ease-out; /* Animation for header */
+            background-image: url('image/kapustnyak1.jpg'); /* Correct path for the background image */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        /* Navigation Menu */
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 10px;
+            position: relative;
+            z-index: 1;
+            animation: slideInFromTop 1s ease-out 0.5s forwards; /* Animation for navigation */
+        }
+
+        nav a {
+            color: white;
+            font-size: 18px;
+            opacity: 0;
+            animation: fadeIn 1s ease-out 1s forwards; /* Fade in effect for links */
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Banoch Section */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            color: white;
+            padding: 50px;
+            text-align: center;
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+        }
+
+        .about-info {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            max-width: 800px;
+            margin: 20px;
+        }
+
+        .about-info h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .about-info p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        .about-info img {
+            width: 100%;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        /* Ingredients Section */
+        .ingredients-section {
+            padding: 50px;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+
+        .ingredients-section h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .ingredients-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .ingredients-list li {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        /* Preparation Section */
+        .preparation-section {
+            padding: 50px;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .preparation-section h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .preparation-section p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        /* YouTube video container */
+        .youtube-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .youtube-container iframe {
+            max-width: 100%;
+            height: 450px;
+            border: none;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- New Header with Navigation -->
+    <div class="content">
+        <header>
+            <h1>Kapustnyak</h1>
+            <!-- Navigation menu -->
+            <nav>
+                <a href="/">Home</a>
+                <a href="/recipes">Recipes</a>
+                <a href="/contact">Contact</a>
+                <a href="/about me">About Me</a>
+            </nav>
+        </header>
+    </div>
+
+    <!-- First Image -->
+    <div class="container">
+        <picture>
+            <source srcset="image/kapustnyak2.jpg" media="(max-width: 768px)">
+            <img src="image/kapustnyak2.jpg" alt="Image before text" style="max-width: 800px; width: 100%; height: auto;">
+        </picture>
+    </div>
+
+    <!-- Banoch Story Section -->
+    <div class="container">
+        <div class="about-info">
+            <h2>The History of Kapustnyak</h2>
+            <p>Kapustnyak is a hearty and flavorful Ukrainian soup that has long been a staple of traditional Ukrainian cuisine. Made primarily from cabbage, meat (usually pork or beef), and various seasonings, kapustnyak is a dish that brings together the simplicity of rural ingredients with the richness of Ukrainian culinary tradition. Known for its comforting warmth and satisfying flavors, kapustnyak has been enjoyed by generations of Ukrainians, especially during colder months, and holds a special place in the country’s gastronomic history.</p>
+
+            <h2>The Origins of Kapustnyak</h2>
+            <p>Kapustnyak’s roots can be traced back to ancient times, when soups and stews made from locally available ingredients were essential for providing nourishment during long winters. The name "kapustnyak" comes from the Ukrainian word kapusta, meaning "cabbage," which is the primary ingredient of the soup. Cabbage has been a staple in Ukrainian agriculture for centuries, thanks to its ability to grow well in the cold climate and its long shelf life, making it an ideal ingredient for winter dishes.
+            Kapustnyak is believed to have originated in rural Ukrainian kitchens, where people would use the resources available to them to create filling and nutritious meals. Cabbage was often preserved in the form of sauerkraut, making it an ideal ingredient for soups during the long, harsh winters when fresh vegetables were scarce. The addition of meat—typically pork or beef—provided the necessary protein, and the other seasonings and vegetables would enhance the soup’s flavor, making it a beloved and satisfying meal.</p>
+
+            <h2>Kapustnyak as a Folk Dish</h2>
+            <p>Kapustnyak is quintessentially a peasant dish, reflecting the resourcefulness and creativity of Ukrainian farmers who made use of what they had on hand. The simplicity of its ingredients belies the depth of flavor that comes from slow-cooking the cabbage and meat, allowing the flavors to meld together. Traditionally, kapustnyak is made by simmering pork or beef with sauerkraut or fresh cabbage, along with onions, carrots, and potatoes, to create a rich and hearty broth.
+            In some regions, kapustnyak is made with the addition of barley, beans, or other grains, which add substance to the soup and make it even more filling. The soup is often flavored with spices such as bay leaves, black pepper, and dill, which enhance its savory taste. Some variations of the soup also include smoked meat or bacon, giving it a smoky richness.
+            Kapustnyak was a common dish in Ukrainian villages, where it was often served as a one-pot meal, perfect for large families. It was also a popular dish for religious holidays, particularly during Christmas and Easter, when it would be made in larger quantities to feed guests and extended family members. Its robust flavors and ability to be made in advance made kapustnyak an ideal choice for celebrations, where it would often be served alongside other traditional Ukrainian dishes.</p>
+            
+            <h2>Kapustnyak in Ukrainian Festivals and Holidays</h2>
+            <p>Kapustnyak holds a special place in Ukrainian holiday meals, particularly during the winter months. During the Christmas holiday, for example, kapustnyak was traditionally part of the twelve-dish Christmas Eve meal, known as Sviat Vechir. This meal, which marks the beginning of Christmas celebrations, includes a variety of dishes, many of which are made from locally sourced and preserved ingredients, reflecting the agrarian lifestyle of Ukrainian farmers.
+            On Easter, kapustnyak might be served as part of a larger feast, again alongside other traditional dishes like borscht, holubtsi (stuffed cabbage rolls), and pampushki (garlic buns). The soup’s warming and hearty nature made it a perfect complement to the festive spirit of these holidays, offering both comfort and sustenance.</p>
+
+            <h2>Regional Variations of Kapustnyak</h2>
+            <p>While kapustnyak is a staple across Ukraine, there are regional variations that give this soup a unique twist depending on the area in which it is prepared. In some parts of Ukraine, particularly in the western regions, kapustnyak might be made with fresh cabbage, while in other areas, sauerkraut is used, giving the soup a more tangy and sour flavor. Some versions of the soup include smoked meats or sausages, which add depth and a rich, smoky taste to the broth.
+            In the Carpathian Mountains, kapustnyak is often made with a variety of meats, including wild game like venison, which gives the soup a distinct, earthy flavor. In other regions, beans, barley, or potatoes may be added to thicken the soup and make it even more filling. These regional variations reflect the diversity of Ukrainian cuisine, where local ingredients and traditions influence the way dishes are prepared.</p>
+                            
+            <h2>Kapustnyak and Ukrainian Hospitality</h2>
+            <p>Kapustnyak, like many traditional Ukrainian dishes, is a symbol of hospitality. The act of preparing and sharing this hearty soup with friends and family is a sign of warmth and generosity. In rural communities, it was common for families to invite neighbors and guests to join in a shared meal, and kapustnyak was often served as a way to bring people together. Its ability to feed many people at once made it an ideal dish for large gatherings, and the process of making it was often a communal effort, with family members working together to prepare the ingredients and cook the soup.
+            Even today, kapustnyak is often served at family gatherings and festive occasions, where it continues to symbolize the spirit of Ukrainian hospitality. The soup is frequently accompanied by homemade bread, pickles, and a shot of horilka (Ukrainian vodka), further enhancing the sense of community and celebration that comes with sharing a meal.</p>
+
+            <h2>Kapustnyak in Modern Ukrainian Cuisine</h2>
+            <p>While kapustnyak has its roots in peasant food, it remains a beloved dish in modern Ukrainian kitchens. Today, kapustnyak can be found in restaurants that specialize in traditional Ukrainian cuisine, as well as in homes across the country. The soup has adapted to contemporary tastes, with some chefs experimenting with new variations and ingredients, but its essence remains unchanged.
+            Kapustnyak continues to be a dish that represents the heart and soul of Ukrainian cooking: simple, satisfying, and full of flavor. Whether made with fresh cabbage or sauerkraut, enriched with smoked meats, or paired with a dollop of sour cream, kapustnyak remains a beloved comfort food for Ukrainians of all generations.</p>
+
+            <h2>Conclusion</h2>
+            <p>Ukrainian kapustnyak is more than just a soup; it is a reflection of the country’s agricultural roots, its culinary creativity, and its rich cultural traditions. With its hearty combination of cabbage, meat, and spices, kapustnyak has been a comforting and nourishing dish for centuries. Whether served at family gatherings, religious holidays, or as a simple, satisfying meal, this traditional soup continues to be a cherished part of Ukrainian cuisine, embodying the warmth, hospitality, and resilience of the Ukrainian people.</p>
+        </div>
+    </div>
+
+    <!-- Second Image -->
+    <div class="container">
+        <picture>
+            <source srcset="image/kapustnyak3.jpg" media="(max-width: 768px)">
+            <img src="image/kapustnyak3.jpg" alt="Image in the middle of text" style="max-width: 800px; width: 100%; height: auto;">
+        </picture>
+    </div>
+
+    <!-- Ingredients Section -->
+    <div class="ingredients-section">
+        <h2>Ingredients for Kapustnyak</h2>
+        <ul class="ingredients-list">
+            <li>1 pound pork ribs, cut into pieces</li>
+            <li>3 bay leaves</li>
+            <li>1 cup meat broth</li>
+            <li>2 cups water, approximately</li>
+            <li>1 cup bacon, cut into cubes (optional); back bacon or side bacon</li>
+            <li>1 medium onion, chopped</li>
+            <li>1 to 2 celery stalks, chopped</li>
+            <li>1 large carrot, grated or finely chopped</li>
+            <li>1 tablespoon olive oil</li>
+            <li>2-3 potatoes, peeled and diced</li>
+            <li>1 cup sauerkraut, rinsed</li>
+            <li>1/2 teaspoon salt, more or less to taste</li>
+            <li>1/2 teaspoon black pepper</li>
+            <li>1/3 teaspoon coriander, ground (optional)</li>
+
+        </ul>
+    </div>
+
+    <!-- Preparation Section -->
+    <div class="preparation-section">
+        <h2>Preparation</h2>
+        <p>Place the pork ribs, bay leaves, broth and about 2 cups of water in a large pot. Bring to a boil, then lower the heat, and simmer, covered, for 40 minutes or until the meat is tender.
+            1 pound pork ribs, 1 cup meat broth, 3 bay leaves, 2 cups water
+            Meanwhile, in a frying pan, cook the chopped bacon (or ham) over medium heat for 4-5 minutes, stirring occasionally. When cooked, transfer it to a plate and reduce the heat to low.
+            1 cup bacon
+            To the same pan, add the onion, carrots, and celery. If there is not enough fat for frying, add the olive oil. Cook over low heat for about 5 minutes, stirring frequently.
+            1 medium onion, 1 to 2 celery stalks, 1 large carrot, 1 tablespoon olive oil
+            After the pork broth has simmered and the meat is tender, remove the ribs from the pot and let them cool slightly. Discard the bay leaves.
+            Add the diced potatoes, sauerkraut, sautéed vegetables, and fried bacon to the pot with the broth. If the soup appears too thick, add water as needed. Kapusnyak should be thick, but still have a soup-like consistency.
+            2-3 potatoes, 1 cup sauerkraut
+            Season with salt, pepper and ground coriander (optional), stir well, and bring the soup to a boil. Then reduce the heat and simmer, covered, for about 15 to 20 minutes or until the potatoes are tender.
+            1/2 teaspoon salt, 1/2 teaspoon black pepper, 1/3 teaspoon coriander
+            Meanwhile, remove the meat from the ribs, cut into smaller pieces if needed and add it back to the pot.
+            
+            Turn off the heat and let the soup sit, covered, for about 15 to 20 minutes to allow the flavors to meld.
+            Serve the sauerkraut soup hot or warm, garnished with fresh chopped herbs such as dill or parsley and sour cream (optional).
+            Notes
+            If the sauerkraut is too sour or vinegary for your liking, you can rinse it under running water before adding it to the soup.
+            If the pieces of sauerkraut are quite large, cut them into smaller pieces before adding them to the pot. This makes it easier to eat and serve.
+            You can add rice or millet to Kapustnyak if you like.
+            The coup can also be made with beef, smoked ribs, sausages, chicken or turkey.
+            You can make Kapustnyak with mushrooms in vegetable broth without meat for a leaner, vegetarian option.
+            Use all-purpose or waxy potatoes since they hold their shape better. Avoid russet potatoes.</p>
+    </div>
+
+    <!-- YouTube Video Embed Section -->
+<div class="youtube-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/N6uQ50-3MPw" title="Kapustnyak Recipe Video" allowfullscreen></iframe>
+</div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Best Ukrainian Food. All rights reserved.</p>
+        <p>Contact: +41 79 706 14 20 | timjob48@gmail.com</p>
+    </footer>
+
+</body>
+</html>

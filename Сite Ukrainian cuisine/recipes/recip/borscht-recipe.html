@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borscht</title>
+    <link rel="stylesheet" href="/main.css">
+    <!-- Link to Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Keyframes animation for menu and header */
+        @keyframes slideInFromTop {
+            0% {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Header Styles */
+        header {
+            position: relative;
+            text-align: center;
+            padding: 20px 0;
+            color: white;
+            font-size: 36px;
+            overflow: hidden;
+            animation: slideInFromTop 1s ease-out; /* Animation for header */
+            background-image: url('image/borscht1.jpg'); /* Correct path for the background image */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        /* Navigation Menu */
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 10px;
+            position: relative;
+            z-index: 1;
+            animation: slideInFromTop 1s ease-out 0.5s forwards; /* Animation for navigation */
+        }
+
+        nav a {
+            color: white;
+            font-size: 18px;
+            opacity: 0;
+            animation: fadeIn 1s ease-out 1s forwards; /* Fade in effect for links */
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Borscht Section */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            color: white;
+            padding: 50px;
+            text-align: center;
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+        }
+
+        .about-info {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            max-width: 800px;
+            margin: 20px;
+        }
+
+        .about-info h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .about-info p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        .about-info img {
+            width: 100%;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        /* Ingredients Section */
+        .ingredients-section {
+            padding: 50px;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+
+        .ingredients-section h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .ingredients-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .ingredients-list li {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        /* Preparation Section */
+        .preparation-section {
+            padding: 50px;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .preparation-section h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .preparation-section p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        /* YouTube video container */
+        .youtube-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .youtube-container iframe {
+            max-width: 100%;
+            height: 450px;
+            border: none;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- New Header with Navigation -->
+    <div class="content">
+        <header>
+            <h1>Borscht</h1>
+            <!-- Navigation menu -->
+            <nav>
+                <a href="/">Home</a>
+                <a href="/recipes">Recipes</a>
+                <a href="/contact">Contact</a>
+                <a href="/about me">About Me</a>
+            </nav>
+        </header>
+    </div>
+
+    <!-- First Image -->
+    <div class="container">
+        <picture>
+            <source srcset="image/borscht2.jpeg" media="(max-width: 768px)">
+            <img src="image/borscht2.jpeg" alt="Image before text" style="max-width: 800px; width: 100%; height: auto;">
+        </picture>
+    </div>
+
+    <!-- Borscht Story Section -->
+    <div class="container">
+        <div class="about-info">
+            <h2>The History of Borscht</h2>
+            <p>The history of Ukrainian borscht is not just a story about a popular national dish but also about a cultural tradition that encompasses folk wisdom, culinary artistry, and historical evolution.</p>
+            
+            <h2>The Origins of Borscht</h2>
+            <p>Although borscht is strongly associated with Ukraine, its roots go much deeper. The word "borscht" comes from the Old Slavic term "borshch," which means "nettle." Originally, borscht referred to a soup made from nettles, a plant that was easily available and widely used for its medicinal properties and culinary value in ancient Slavic communities.
+            However, the borscht as we know it today took on its current form in Ukrainian cuisine in the 14th-15th centuries. By that time, the dish had become more varied, with beets, cabbage, meat, and other vegetables forming the core ingredients.</p>
+            
+            <h2>Borscht in Different Regions of Ukraine</h2>
+            <p>Borscht varies widely across Ukraine, depending on the region. In Central and Eastern Ukraine, borscht is typically made with meat (usually pork or beef), while in the West, more vegetarian versions or borschts with mushrooms are common. In the Carpathians, borscht might contain more garlic and fresh herbs, and in Polissya, it often includes more potatoes.
+            A distinctive feature of Ukrainian borscht is its "richness." It should be thick and hearty, with a deep, balanced flavor that combines sour, sweet, and salty notes.</p>
+
+            <h2>The Symbolism of Borscht</h2>
+            <p>Borscht has become not only a culinary symbol of Ukraine but also a key element of national identity. In Ukrainian culture, borscht is closely associated with hospitality and family warmth. It was more than just food—it was an occasion for gathering and celebration. Ukrainians traditionally believed that only women should make true borscht, and the process itself was seen as an art form.</p>
+
+            <h2>Borscht in Historical Context</h2>
+            <p>As Ukraine's society and state evolved, so did borscht, adapting to historical events. For example, during periods of famine and hardship, borscht became a symbol of survival, as people used the most accessible and humble ingredients. During the Soviet era, borscht became a widespread dish across all republics, though the Ukrainian version retained its distinctiveness and popularity.
+            In the era of Ukrainian independence, borscht regained its status as a vital cultural element. In 2006, UNESCO recognized borscht as part of Ukraine's intangible cultural heritage, and in 2019, Ukraine submitted a formal request to include borscht on the list of cultural heritage, emphasizing its significance for the Ukrainian national identity.</p>
+            
+            <h2>Borscht in Culture</h2>
+            <p>Today, borscht is more than just a dish; it is a cultural symbol. It often appears in Ukrainian songs, poems, and works of art. In the times of independence, borscht became even a political symbol, representing national identity and resistance to foreign influences.
+            Ukrainian borscht is more than just food. It is part of history, with pieces of it found in every family recipe, every spoonful, and every tradition passed down through generations.</p>
+        </div>
+    </div>
+
+    <!-- Second Image -->
+    <div class="container">
+        <picture>
+            <source srcset="image/borscht3.jpg" media="(max-width: 768px)">
+            <img src="image/borscht3.jpg" alt="Image in the middle of text" style="max-width: 800px; width: 100%; height: auto;">
+        </picture>
+    </div>
+
+    <!-- Ingredients Section -->
+    <div class="ingredients-section">
+        <h2>Ingredients for Borscht</h2>
+        <ul class="ingredients-list">
+            <li>1 pound pork, see notes</li>
+            <li>4-6 bay leaves</li>
+            <li>7-8 cups water, approximately</li>
+            <li>1/4 white cabbage</li>
+            <li>1 large carrot</li>
+            <li>1 yellow onion</li>
+            <li>3 beetroots, cooked or raw</li>
+            <li>1 14 ounce canned tomatoes, ideally tomato puree (unseasoned)</li>
+            <li>2 tablespoons olive oil</li>
+            <li>2 tablespoons tomato paste</li>
+            <li>5 medium-sized potatoes</li>
+            <li>1 teaspoon salt</li>
+            <li>1/2 teaspoon pepper</li>
+            <li>1 tablespoon apple cider vinegar, optional</li>
+        </ul>
+    </div>
+
+    <!-- Preparation Section -->
+    <div class="preparation-section">
+        <h2>Preparation</h2>
+        <p>First you need to cook the broth. For this, add the pork and the bay leaves to a pan with high sides. Fill the pan with water, add the lid, and cook for an hour on medium-low heat from the moment of boiling.
+            1 pound pork, 4-6 bay leaves, 7-8 cups water. While the broth is cooking, thinly slice the cabbage. Also, wash and grate the carrot. Peel the onion and finely chop it. Then also peel the beetroots (if using raw beetroots) and grate them. Be careful since it can be messy and beetroots can leave stains.
+            1/4 white cabbage, 1 large carrot, 1 yellow onion, 3 beetroots. Put the canned tomatoes in a tall glass and puree with an immersion blender until you have a homogeneous thick puree. If you bought tomato puree in the first place, skip this step!1 14 ounce canned tomatoes.
+            Heat the olive oil in a frying pan and sauté the chopped onion and grated carrot for roughly 5 minutes on medium-high heat stirring regularly so that they don't burn. Then turn down the heat to low.
+            2 tablespoons olive oil. Now add the grated beetroots, stir them in and fry everything for another 7 minutes. Remember to keep stirring regularly.
+            Pour the tomato puree, tomato paste, 1/3 teaspoon of salt and pepper into the pan with the vegetables. Stir, then cover with a lid and simmer for 10 minutes.
+            2 tablespoons tomato paste, 1/2 teaspoon pepper
+            Meanwhile, peel the potatoes and cut them into cubes or strips.
+            5 medium-sized potatoes</p>
+
+        <h2>Notes</h2>
+        <ul class="ingredients-list">
+            <li>You can use different cuts of meat – bone-in or boneless. Pork shoulder, pork butt, pork ribs or pork belly, among others, all work. Generally it’s better to not use pork with skin on since this will turn the broth too fatty. Instead of pork, you can also use stewing beef. If you use bone-in cuts of meat for the broth, it will turn out to be stronger and richer.</li>
+            <li>You can use raw or cooked beets. Using cooked beets speeds up the process a bit and makes grating them easier. </li>
+            <li>Instead of canned tomatoes, you can also add fresh, chopped tomatoes.</li>
+            <li>At the end of cooking, you can add finely chopped garlic or finely chopped lard to the borscht.</li>
+            </ul>
+    </div>
+
+    <!-- YouTube Video Embed Section -->
+<div class="youtube-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/4DPu-Ve_luU" title="Borscht Recipe Video" allowfullscreen></iframe>
+</div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Best Ukrainian Food. All rights reserved.</p>
+        <p>Contact: +41 79 706 14 20 | timjob48@gmail.com</p>
+    </footer>
+
+</body>
+</html>

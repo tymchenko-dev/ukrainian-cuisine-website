@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galushki</title>
+    <link rel="stylesheet" href="/main.css">
+    <!-- Link to Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Keyframes animation for menu and header */
+        @keyframes slideInFromTop {
+            0% {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Header Styles */
+        header {
+            position: relative;
+            text-align: center;
+            padding: 20px 0;
+            color: white;
+            font-size: 36px;
+            overflow: hidden;
+            animation: slideInFromTop 1s ease-out; /* Animation for header */
+            background-image: url('image/galushki1.jpg'); /* Correct path for the background image */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        /* Navigation Menu */
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 10px;
+            position: relative;
+            z-index: 1;
+            animation: slideInFromTop 1s ease-out 0.5s forwards; /* Animation for navigation */
+        }
+
+        nav a {
+            color: white;
+            font-size: 18px;
+            opacity: 0;
+            animation: fadeIn 1s ease-out 1s forwards; /* Fade in effect for links */
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Banoch Section */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            color: white;
+            padding: 50px;
+            text-align: center;
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+        }
+
+        .about-info {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            max-width: 800px;
+            margin: 20px;
+        }
+
+        .about-info h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .about-info p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        .about-info img {
+            width: 100%;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        /* Ingredients Section */
+        .ingredients-section {
+            padding: 50px;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+
+        .ingredients-section h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .ingredients-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .ingredients-list li {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        /* Preparation Section */
+        .preparation-section {
+            padding: 50px;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .preparation-section h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .preparation-section p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        /* YouTube video container */
+        .youtube-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .youtube-container iframe {
+            max-width: 100%;
+            height: 450px;
+            border: none;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- New Header with Navigation -->
+    <div class="content">
+        <header>
+            <h1>Galushki</h1>
+            <!-- Navigation menu -->
+            <nav>
+                <a href="/">Home</a>
+                <a href="/recipes">Recipes</a>
+                <a href="/contact">Contact</a>
+                <a href="/about me">About Me</a>
+            </nav>
+        </header>
+    </div>
+
+    <!-- First Image -->
+    <div class="container">
+        <picture>
+            <source srcset="image/galushki2.jpg" media="(max-width: 768px)">
+            <img src="image/galushki2.jpg" alt="Image before text" style="max-width: 800px; width: 100%; height: auto;">
+        </picture>
+    </div>
+
+    <!-- Banoch Story Section -->
+    <div class="container">
+        <div class="about-info">
+            <h2>The History of Galushki</h2>
+            <p>The history of Ukrainian galushki (dumplings) is a story of simplicity, flavor, and folk wisdom, encapsulated in small but incredibly delicious pieces of dough that have long been an integral part of Ukrainian cuisine. Galushki is one of the oldest and most versatile dishes in Ukrainian folk cooking, existing in many variations and adapting to the peculiarities of different regions of Ukraine.</p>
+
+            <h2>The Origins of Galushki</h2>
+            <p>Galushki, like many other folk dishes, have deep historical roots. The word "galushka" comes from the Old Slavic term "galushi," which is related to the verb "galushit," meaning "to mix" or "to knead." This suggests that galushki originally referred to simple dough mixed with various ingredients, and they were known in the kitchens of many Eastern European countries.
+            One version of the story is that galushki originated in Kievan Rus' and spread across the territory of modern Ukraine, Russia, and other Slavic countries. In Ukrainian cuisine, they gained popularity due to the accessibility of ingredients such as flour, eggs, and potatoes, which were readily available in peasant households.</p>
+
+            <h2>Varieties of Galushki in Ukraine</h2>
+            <p>Galushki are a versatile dish that can be served as a main course or a side dish, depending on the recipe and region. There are numerous types of galushki, each with its unique characteristics.
+            Potato galushki — These dumplings are made from potato dough and are often served with fried onions, sour cream, or meat gravy. This version is one of the most popular and widespread, especially in central and western Ukraine.
+            Flour-based galushki — The classic galushki made from wheat flour, water, eggs, and salt. These dumplings can be small or large, depending on preference. They are often served with broth or soups like borscht.
+            Galushki with fillings — In some regions of Ukraine, galushki are prepared with various fillings, such as potatoes, meat, cottage cheese, or even mushrooms. These are typically either baked or boiled in broth.
+            Summer galushki — In warm weather, galushki with vegetables like pumpkin or cabbage are popular. These versions are lighter and offer a refreshing summer flavor.</p>
+            
+            <h2>Galushki in Ukrainian Culture</h2>
+            <p>Galushki hold a significant place in traditional Ukrainian cuisine. This is a dish that does not require expensive or rare ingredients, making it widely spread in peasant kitchens, especially during times of poverty or famine. Galushki were often made for family meals, as well as for large celebrations and events.
+            Moreover, galushki symbolize hospitality and family traditions. In Ukrainian villages, it was common to find grandmothers and mothers preparing galushki for the whole family, gathering around a large table. Such moments represented the warmth and comfort of home.</p>
+
+            <h2>Galushki in Historical Context</h2>
+            <p>Over the centuries, galushki remained an important element of Ukrainian cuisine. In the 19th century, when Ukraine was part of the Russian Empire, galushki became a popular dish among all social classes, from peasants to nobility. During this period, galushki became a symbol of folk simplicity and homey comfort.
+            After World War II, when Ukraine was recovering, galushki remained a beloved dish in Soviet households. They were cheap, filling, and convenient for mass preparation, making them ideal for everyday meals. During the Soviet era, many variations of galushki appeared, such as fried or baked versions, which differed from the traditional boiled ones.
+            With Ukraine gaining independence in 1991, galushki once again became an important part of the national culinary identity. Today, they are often associated with home traditions, family gatherings, and national holidays.</p>
+                            
+            <h2>Galushki as a Symbol of Ukrainian Cuisine</h2>
+            <p>Galushki are more than just a dish; they are a symbol of Ukrainian folk cuisine, embodying hospitality, simplicity, and heartiness. They represent Ukrainian family traditions, where food was always prepared with love and care, and meals served as a reason for family gatherings.
+            Today, galushki remain a popular and beloved dish that preserves its connection to Ukrainian culture and history, passed down from generation to generation.</p>
+
+            <h2>Conclusion</h2>
+            <p>Ukrainian galushki are not just a tasty and hearty dish, but also an important part of Ukrainian gastronomic tradition. They reflect the simplicity, wisdom, and hospitality of the Ukrainian people. With each bite of galushki, we not only enjoy their taste but also connect with the centuries-old history that lies behind this traditional Ukrainian dish.</p>
+        </div>
+    </div>
+
+    <!-- Second Image -->
+    <div class="container">
+        <picture>
+            <source srcset="image/galushki3.jpg" media="(max-width: 768px)">
+            <img src="image/galushki3.jpg" alt="Image in the middle of text" style="max-width: 800px; width: 100%; height: auto;">
+        </picture>
+    </div>
+
+    <!-- Ingredients Section -->
+    <div class="ingredients-section">
+        <h2>Ingredients for Galushki</h2>
+        <ul class="ingredients-list">
+            <li>2/3 cup all-purpose flour</li>
+            <li>1/2 teaspoon salt, more for salting water</li>
+            <li>1 egg</li>
+            <li>6 tablespoons milk</li>
+            <li>2 cups mushrooms, chopped</li>
+            <li>1 cup yellow onion, chopped</li>
+            <li>1 tablespoon olive oi</li>
+            <li>1 tablespoon butter</li>
+        </ul>
+    </div>
+
+    <!-- Preparation Section -->
+    <div class="preparation-section">
+        <h2>Preparation</h2>
+        <p>Add the flour to a deep mixing bowl. Then make a well in the center, add the salt and beat in an egg.
+            2/3 cup all-purpose flour, 1/2 teaspoon salt, 1 egg
+            Now add milk. Mix first with a spoon and then with your hands until you have a soft dough. Cover the bowl with cling film and let it sit for 20 minutes.
+            6 tablespoons milk
+            Meanwhile, add the chopped mushrooms and onions to a frying pan with olive oil and a pinch of salt. Fry the mushrooms and onions on low heat for 15 minutes while stirring regularly. Set aside.
+            2 cups mushrooms, 1 cup yellow onion, 1 tablespoon olive oil
+            Sprinkle your work surface with a bit of flour so that the dough does not stick. Place the dough onto the surface and cut it into quarters. Roll one quarter of dough into a thin strip (like a sausage), about half an inch in diameter. Cut the strip into thin slices about a third of an inch thick. Repeat with the other pieces of dough.
+            Add water to a large pot, bring it to a boil and salt it. Then add the pieces of dough to the water. Once they float to the surface, cook them for 3 more minutes.
+            Remove the finished dumplings with a slotted spoon and transfer them to a bowl. Add the butter and stir.
+            1 tablespoon butter
+            When the butter has melted, add the fried mushrooms and onions to the bowl with the dumplings as well. Stir again. Now your Galushki are ready to be served. You can serve them with sour cream. Enjoy!</p>
+
+        <h2>Notes</h2>
+        <ul class="ingredients-list">
+            <li>Do not add too much flour, even if the dough is a little sticky. Otherwise the galushki may turn out to be too hard.</li>
+            <li>You can use fresh or frozen mushrooms. Frozen mushrooms have more water, so you may have to drain it during frying.</li>
+            <li>Galushki can also be cooked with fried onions and/or fried meat, it also turns out very tasty.</li>
+            <li>You can use cremini mushrooms but other types of mushrooms also work.</li>
+            <li>You can freeze these dumplings before cooking them but you can also freeze already boiled galushki (just the dumplings, don’t mix them with fried mushrooms and onions).</li>
+
+        </ul>
+    </div>
+
+    <!-- YouTube Video Embed Section -->
+<div class="youtube-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/F2Z275XuSMc" title="Galushki Recipe Video" allowfullscreen></iframe>
+</div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Best Ukrainian Food. All rights reserved.</p>
+        <p>Contact: +41 79 706 14 20 | timjob48@gmail.com</p>
+    </footer>
+
+</body>
+</html>
