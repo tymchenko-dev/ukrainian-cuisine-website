@@ -13,7 +13,7 @@ A static website showcasing traditional Ukrainian dishes. Designed as a portfoli
 
 ## 🖼️ Screenshot
 
-
+![Screenshot](Photo.png)
 
 ## 🌐 GitHub Pages
 
